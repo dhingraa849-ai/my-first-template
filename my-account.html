@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> My Account</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+        /* === Header code === */
+        nav {
+            background-color: white !important;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            z-index: 99999;
+            transition: all 0.3s ease;
+        }
+
+        a.nav-link.active {
+            color: #40b340 !important;
+            border-bottom: 1px solid #40b340;
+        }
+
+        .navbar-nav {
+            margin-left: 100px;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .nav-item {
+            padding-left: 20px;
+        }
+
+        nav li a:hover {
+            color: #40b340 !important;
+        }
+
+        nav ul li a {
+            color: black !important;
+        }
+
+        .icons {
+            margin-left: 50px;
+        }
+
+        .top-bar {
+            background-color: #1a331a;
+            font-size: 14px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-left: 12px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .navbar-brand span {
+            vertical-align: middle;
+        }
+
+        nav i {
+            font-weight: 600;
+        }
+
+        /* Common Text Styles for Mega Menu */
+        .mega-title {
+            color: #1a331a;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+
+        ul.mega-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        ul.mega-list li {
+            margin-bottom: 12px;
+        }
+
+        ul.mega-list li a {
+            color: #666 !important;
+            text-decoration: none;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            padding: 0;
+            display: inline-block;
+        }
+
+        ul.mega-list li a:hover {
+            color: #40b340 !important;
+            background: transparent;
+            transform: translateX(5px);
+        }
+
+        /* Promo Banner / Card Styling */
+        .mega-promo-card-1 {
+            background-image: url("../Beauti-shop/assests/images/mega-bg-1.jpg");
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mega-promo-card-2 {
+            background-image: url("../Beauti-shop/assests/images/mega-bg-2.jpg");
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mega-promo-card-3 {
+            background-image: url("../Beauti-shop/assests/images/mega-bg-3.jpg");
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bg-promo-makeup {
+            background: linear-gradient(135deg, #d63384, #f06292);
+        }
+
+        .bg-promo-hair {
+            background: linear-gradient(135deg, #0dcaf0, #0077b6);
+        }
+
+        .btn-shop-now {
+            background-color: #1a331a;
+            color: white;
+            border-radius: 25px;
+            padding: 8px 25px;
+            font-size: 14px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-shop-now:hover {
+            background-color: #40b340;
+            color: white;
+        }
+
+        /* === End Header === */
+
+        :root {
+            --primary-green: #2B4E32;
+            --text-muted: #8E8E8E;
+            --light-bg: #F9F9F9;
+            --border-color: #EAEAEA;
+            --star-color: #FFC107;
+            --accent-orange: #D97A52;
+        }
+
+        .fs20 {
+            font-size: 20px;
+        }
+
+        .yellow {
+            color: #ce8c1d;
+        }
+
+        .fs45 {
+            font-size: 45px;
+        }
+
+        h2 {
+            font-weight: 700 !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 600;
+        }
+
+        .fw600 {
+            font-weight: 600;
+        }
+
+        .fs25 {
+            font-size: 27px;
+            font-weight: 700;
+        }
+
+        /* ==== End Header ==== */
+
+
+        /* --- Header Section --- */
+        .page-header {
+            background-color: #f9fafb;
+            /* Light grey background */
+            padding: 50px 0;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 50px;
+        }
+
+        .page-header h2 {
+            font-weight: 700;
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .breadcrumb-text {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .breadcrumb-text a {
+            color: #6c757d;
+            text-decoration: none;
+        }
+
+        /* --- Sidebar Navigation --- */
+        .sidebar-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .sidebar-link {
+            display: block;
+            padding: 14px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border: 1px solid #f1f3f5;
+            transition: all 0.2s ease;
+        }
+
+        .sidebar-link:hover {
+            background-color: #f8f9fa;
+        }
+
+        .sidebar-link.active {
+            background-color: #1d4022;
+            /* Dark Green */
+            color: #fff;
+            border-color: #1d4022;
+        }
+
+        /* --- Profile Picture Section --- */
+        .profile-pic-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .edit-badge {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 32px;
+            height: 32px;
+            background-color: #1d4022;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #fff;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .edit-badge:hover {
+            background-color: #143219;
+        }
+
+        /* --- Form Styling --- */
+        .form-label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .form-label span.required {
+            color: #1a1a1a;
+            margin-left: 2px;
+        }
+
+        .form-control,
+        .form-select {
+            border-radius: 12px;
+            /* Soft rounded corners */
+            border: 1px solid #e2e8f0;
+            padding: 12px 18px;
+            font-size: 0.95rem;
+            color: #495057;
+            box-shadow: none;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: #1d4022;
+            box-shadow: 0 0 0 0.2rem rgba(29, 64, 34, 0.1);
+        }
+
+        .form-control::placeholder {
+            color: #adb5bd;
+        }
+
+        /* Submit Button */
+        .btn-update {
+            background-color: #1d4022;
+            color: #fff;
+            border: none;
+            padding: 12px 28px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-radius: 30px;
+            /* Pill shape */
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn-update:hover {
+            background-color: #143219;
+            color: #fff;
+        }
+
+        /* --- Bottom Features Section --- */
+        .features-section {
+            margin-top: 80px;
+            padding: 60px 0;
+            border-top: 1px solid #f1f3f5;
+        }
+
+        .feature-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .feature-icon-wrapper {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: #556b2f;
+            /* Olive/Green tone matching design */
+            flex-shrink: 0;
+        }
+
+        .feature-text h5 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin: 0 0 4px 0;
+            color: #1a1a1a;
+        }
+
+        .feature-text p {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 991.98px) {
+            .sidebar-nav {
+                margin-bottom: 40px;
+            }
+
+            .feature-box {
+                margin-bottom: 25px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+
+
+        /* === NewsLetter === */
+
+        .newslettes {
+            width: 100%;
+            background-image: url('../Beauti-shop/assests/images/background-2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding: 20px;
+            border-radius: 20px;
+            padding-bottom: 100px !important;
+            padding-top: 100px;
+        }
+
+        .news-content input {
+            padding: 20px 110px 20px 20px;
+            border-radius: 30px;
+            background-color: white;
+            border: none;
+
+        }
+
+        /* ===  End NewsLetter === */
+
+
+        /* ===  Footer === */
+        footer {
+            width: 100%;
+            background-image: url('../Beauti-shop/assests/images/background-2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            padding: 20px;
+            border-radius: 20px;
+            padding-bottom: 10px !important;
+            padding-top: 100px;
+        }
+
+        footer h4 {
+            font-size: 1.4rem;
+        }
+
+        footer .container {
+            background-color: white !important;
+            border-radius: 10px;
+            padding: 20px;
+            padding-bottom: 50px;
+        }
+
+        .footer-icons {
+            margin-top: 40px !important;
+        }
+
+        .footer-icons i {
+            /* background-color: #15271a; */
+            color: #1d502b;
+            border-radius: 50%;
+            padding: 6px 9px;
+            font-size: 18px;
+            border: solid 1px gray;
+            margin-right: 10px;
+        }
+
+        footer p {
+            margin-top: 15px;
+            color: gray;
+
+        }
+
+        footer a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        footer .selcted-language {
+            color: gray;
+            margin-top: 40px;
+        }
+
+        footer .selcted-language select {
+            border: none;
+            color: gray;
+        }
+
+        /* Hover Eeffct footer */
+
+        footer a {
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            transition: color 0.3s ease;
+            padding-bottom: 2px;
+        }
+
+        footer a:hover {
+            color: #28a745;
+        }
+
+        footer a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #28a745;
+            transition: width 0.3s ease-in-out;
+        }
+
+        footer a:hover::after {
+            width: 100%;
+        }
+
+
+        .footer-icons a i {
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+        }
+
+        .footer-icons a:hover i {
+            color: #28a745;
+            transform: scale(1.0) translateY(-3px);
+            filter: drop-shadow(0px 5px 8px rgba(40, 167, 69, 0.4));
+        }
+
+        .footer-icons a::after {
+            display: none !important;
+        }
+
+
+        @keyframes fadeInCheck {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .btn {
+            background-color: #1a331a;
+            border-radius: 30px;
+            border: none;
+            padding: 15px 30px;
+            color: white;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            z-index: 1;
+            transition: color 0.4s ease;
+        }
+
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #2a522a;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            top: 0;
+            color: white !important;
+
+        }
+
+        .l {
+            color: #1a3622;
+        }
+
+        .btn:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            color: white !important;
+        }
+
+
+        /* === End  Footer === */
+
+
+
+
+
+
+
+
+        /* my slider */
+        /* ========================================= */
+        /* OFFCANVAS (MOBILE SIDEBAR) STYLING */
+        /* ========================================= */
+
+
+        @media (min-width: 991px) and (max-width: 1200px) {
+            .navbar-nav {
+                font-size: 16px;
+                margin-left: 10px;
+            }
+
+            .navbar-brand span {
+                font-size: 18px;
+            }
+
+            .navbar-brand img {
+                width: 40px;
+            }
+
+            .nav-item {
+                padding-left: 6px !important;
+            }
+
+
+            .nav-item {
+                padding: 10px 0;
+            }
+
+            .nav-link {
+                /* font-size: 1.1rem; */
+                margin: 0;
+            }
+
+            .mobile-actions {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 20px;
+            }
+
+            .btn-partner {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+            .navbar-nav {
+                margin-left: 60px !important;
+                font-size: 16px;
+            }
+
+            .navbar-brand span {
+                font-size: 18px;
+            }
+
+            .navbar-brand img {
+                width: 40px;
+            }
+
+            .nav-item {
+                padding-left: 13px;
+            }
+
+            .dmt {
+                margin-top: 10px;
+            }
+        }
+
+
+
+        @media (min-width: 1300px) and (max-width: 1399px) {
+
+            .navbar-nav {
+                margin-left: 50px !important;
+                font-size: 17px;
+            }
+
+            .navbar-brand span {
+                font-size: 20px;
+            }
+
+            .navbar-brand img {
+                width: 40px;
+            }
+
+            .nav-item {
+                padding-left: 11px;
+            }
+        }
+
+
+
+
+        /* Desktop view ke liye */
+        @media (min-width: 992px) {
+            .nav-item.mega-dropdown {
+                position: static !important;
+            }
+
+            .mega-menu-box {
+                position: absolute;
+                top: 100%;
+                /* Navbar ke bilkul niche */
+                left: 50%;
+                /* Animation ke liye translate use kiya hai margin ki jagah */
+                transform: translate(-50%, 15px);
+                width: 85%;
+                max-width: 1000px;
+                background-color: #ffffff;
+                border-radius: 12px;
+                padding: 35px;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+                pointer-events: none;
+                z-index: 9999;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+            }
+
+            .mega-menu-box::before {
+                content: "";
+                position: absolute;
+                top: -20px;
+                left: 0;
+                width: 100%;
+                height: 20px;
+                background: transparent;
+            }
+
+            /* Hover state */
+            .nav-item.mega-dropdown:hover .mega-menu-box {
+                visibility: visible;
+                opacity: 1;
+                transform: translate(-50%, 0);
+                /* Slide hoke upar touch karega */
+                pointer-events: auto;
+            }
+        }
+
+
+        @media (max-width: 541px) {
+            .mb br {
+                display: none !important;
+            }
+
+            .mtt-2 {
+                margin-top: 30px;
+            }
+        }
+
+
+
+        /* ========================================= */
+        /* PREMIUM OFFCANVAS (MOBILE SIDEBAR) STYLING*/
+        /* ========================================= */
+        @media (max-width: 991px) {
+
+            .offcanvas {
+                width: 300px !important;
+                border-left: none;
+                box-shadow: -5px 0 30px rgba(0, 0, 0, 0.15);
+            }
+
+            .offcanvas-header {
+                background-color: #1a331a;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                color: white;
+            }
+
+            .offcanvas-body {
+                padding: 15px;
+            }
+
+            .navbar-nav {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+
+            .nav-item {
+                padding-left: 0;
+                border-bottom: 1px solid #f0f0f0;
+                padding: 5px 0;
+            }
+
+            .nav-link {
+                font-size: 1.1rem;
+                margin: 0;
+                padding: 12px 10px !important;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .icons {
+                margin-left: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                background: #f8f9fa;
+                padding: 15px 0;
+                border-radius: 10px;
+            }
+
+            /* .icons .nav-item {
+        border: none;
+    } */
+
+            .mega-menu-box {
+                display: none;
+                background-color: #ffffff;
+                padding: 10px 15px 25px 15px;
+                border-radius: 12px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+                border: 1px solid #eaeaea;
+            }
+
+            .mega-menu-box.show {
+                display: block;
+            }
+
+            .mega-title {
+                color: #40b340;
+                font-size: 15px;
+                margin-top: 20px;
+                margin-bottom: 5px;
+                padding-bottom: 8px;
+                border-bottom: 1px dashed #e0e0e0;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            ul.mega-list li {
+                margin-bottom: 0;
+            }
+
+            ul.mega-list li a {
+                display: block;
+                padding: 12px 10px;
+                font-size: 15px;
+                border-bottom: 1px solid #f5f5f5;
+                color: #555 !important;
+                border-radius: 6px;
+            }
+
+            ul.mega-list li:last-child a {
+                border-bottom: none;
+            }
+
+            ul.mega-list li a:hover,
+            ul.mega-list li a:active {
+                background-color: #f0fbf0;
+                color: #40b340 !important;
+                transform: translateX(4px);
+            }
+
+            .mega-promo-card {
+                padding: 25px 20px;
+                min-height: auto;
+                margin-top: 25px;
+                border-radius: 12px;
+                background: linear-gradient(135deg, #b88a44, #d4a760);
+                box-shadow: 0 6px 15px rgba(184, 138, 68, 0.3);
+            }
+        }
+
+
+
+
+
+
+        /* ======================================================= */
+        /* MEGA MENU HOVER GAP FIX (INVISIBLE BRIDGE METHOD)       */
+        /* ======================================================= */
+
+        @media (min-width: 992px) {
+
+            /* 1. Bridge Banane Ka Code (Main Fix) */
+            .mega-menu-box::before {
+                content: "";
+                position: absolute;
+
+                /* DHYAN DEIN: Agar abhi bhi gap aaye, toh in dono numbers ko badha dein (e.g., -40px aur 40px) */
+                top: -30px;
+                height: 30px;
+
+                left: 0;
+                width: 100%;
+                background-color: transparent;
+                /* Ye transparent rahega taaki dikhe nahi par mouse ko pakad le */
+                z-index: 10;
+                cursor: default;
+            }
+
+            /* 2. Menu ki Position aur Animation */
+            .mega-menu-box {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                /* Box ko center karne ke liye */
+
+                /* Box ko thoda niche rakhne ke liye margin use karein, translate nahi */
+                margin-top: 15px;
+
+                visibility: hidden;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.3s ease-in-out;
+            }
+
+            /* 3. Hover karne par Menu ka Behavior */
+            .nav-item.mega-dropdown:hover .mega-menu-box {
+                visibility: visible;
+                opacity: 1;
+                margin-top: 0px;
+                /* Hover par box thoda upar aakar link se jud jayega */
+                pointer-events: auto;
+            }
+        }
+
+
+
+
+        @media (max-width: 991px) {
+            .offcanvas {
+                width: 250px !important;
+                /* Premium width */
+            }
+
+            ul.navbar-nav {
+                margin-left: 0 !important;
+                align-items: flex-start !important;
+                padding-top: 20px;
+            }
+
+            li.nav-item {
+                padding-left: 0 !important;
+                width: 100%;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            }
+
+            .btn-close {
+                filter: invert(1);
+            }
+
+            .navbar-brand {
+                margin-left: 10px;
+            }
+
+            .icons a.nav-link {
+                padding-left: 20px;
+            }
+
+            ul.navbar-nav.icons {
+                display: ruby;
+            }
+
+            .top-bar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!--  Header -->
+    <header class="sticky-top">
+        <div class="top-bar py-3 text-white">
+            <div class="container">
+                <div class="row align-items-center text-center">
+
+                    <div class="col-md-4 col-lg-3 text-md-start mb-2 mb-md-0">
+                        <span>Call Us : +123-456-789</span>
+                    </div>
+
+                    <div class="col-md-4 col-lg-6 mb-2 mb-md-0">
+                        <span>Sign up and <strong>GET 20% OFF</strong> for your first order.
+                            <a href="#" class="text-warning text-decoration-underline ms-1">Sign up now</a>
+                        </span>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 text-md-end">
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-pinterest"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg py-3 position-relative">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assests/images/logo.png" alt="logo" width="60px">
+                    <span>Beauty Shop</span>
+                </a>
+                <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fw-bold">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body position-static">
+
+                        <ul class="navbar-nav position-static">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./shop.html">Shop</a>
+                            </li>
+
+                            <li class="nav-item mega-dropdown">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#skinCareMegaMenu" role="button"
+                                    aria-expanded="false" aria-controls="skinCareMegaMenu">
+                                    Skin Care <i class="bi bi-chevron-down fs-6 d-lg-none text-secondary"></i>
+                                </a>
+
+                                <div class="mega-menu-box collapse d-lg-block" id="skinCareMegaMenu">
+                                    <div class="container-fluid px-0">
+                                        <div class="row text-start g-4 align-items-stretch">
+                                            <div class="col-lg-3 col-md-12 col-md-6 mt-lg-0 mt-5 pt-3">
+                                                <h6 class="mega-title">Skin Care</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Cleansers</a></li>
+                                                    <li><a href="#">Serums</a></li>
+                                                    <li><a href="#">Moisturizers</a></li>
+                                                    <li><a href="#">Masks</a></li>
+                                                    <li><a href="#">Face Oils</a></li>
+                                                    <li><a href="#">Lip Care</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12 col-md-6 mt-lg-0 mt-5 pt-3">
+                                                <h6 class="mega-title">By Skin Type</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Oily SKin</a></li>
+                                                    <li><a href="#">Dry Skin</a></li>
+                                                    <li><a href="#">Combinatation SKin </a></li>
+                                                    <li><a href="#">Sensitive Skin</a></li>
+                                                    <li><a href="#">Normal SKin</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12 col-md-6 mt-lg-0 mt-5 pt-3">
+                                                <h6 class="mega-title">By Type Concern</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Acne</a></li>
+                                                    <li><a href="#">Anti-Aging</a></li>
+                                                    <li><a href="#">Pigmentation</a></li>
+                                                    <li><a href="#">Dark Spots</a></li>
+                                                    <li><a href="#">Dryness</a></li>
+                                                    <li><a href="#">Dullness</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12 col-md-6 mt-lg-0 mt-4 pt-3">
+                                                <div class="mega-promo-card-1">
+                                                    <p class="mb-1 text-light mt-5 pt-5">Latest Offers</p>
+                                                    <h5 class="fw-bold mb-3">15% Off Skin Care</h5>
+                                                    <a href="./shop.html" class="btn bg-white ">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item mega-dropdown">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#makeupMegaMenu" role="button"
+                                    aria-expanded="false" aria-controls="makeupMegaMenu">
+                                    Makeup <i class="bi bi-chevron-down fs-6 d-lg-none text-secondary"></i>
+                                </a>
+
+                                <div class="mega-menu-box collapse d-lg-block" id="makeupMegaMenu">
+                                    <div class="container-fluid px-0">
+                                        <div class="row text-start g-4 align-items-stretch">
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-2 pt-3">
+                                                <h6 class="mega-title "> Makeup</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Face</a></li>
+                                                    <li><a href="#">Eyes</a></li>
+                                                    <li><a href="#">Lips</a></li>
+                                                    <li><a href="#">Nails</a></li>
+                                                    <li><a href="#">Makeup Kits</a></li>
+                                                    <li><a href="#">Tools & Brushes</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-3 pt-3">
+                                                <h6 class="mega-title">Shop By Price</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">$15-$35</a></li>
+                                                    <li><a href="#">$35-$55</a></li>
+                                                    <li><a href="#">$55-$75</a></li>
+                                                    <li><a href="#">$75-$95</a></li>
+                                                    <li><a href="#">Above $95</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-3 pt-3">
+                                                <h6 class="mega-title">Special Collection</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">New Arrivals</a></li>
+                                                    <li><a href="#">Best Sellers</a></li>
+                                                    <li><a href="#">Limited Edition</a></li>
+                                                    <li><a href="#">Makeup Gift Sets</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-4 pt-3">
+                                                <div class="mega-promo-card-2">
+                                                    <p class="mb-1 text-light mt-5 pt-5">Latest Offers</p>
+                                                    <h5 class="fw-bold mb-3">15% Off Skin Care</h5>
+                                                    <a href="./shop.html" class="btn bg-white ">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item mega-dropdown">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#hairCareMegaMenu" role="button"
+                                    aria-expanded="false" aria-controls="hairCareMegaMenu">
+                                    Hair Care <i class="bi bi-chevron-down fs-6 d-lg-none text-secondary"></i>
+                                </a>
+
+                                <div class="mega-menu-box collapse d-lg-block" id="hairCareMegaMenu">
+                                    <div class="container-fluid px-0">
+                                        <div class="row text-start g-4 align-items-stretch">
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-2 pt-3">
+                                                <h6 class="mega-title">Hair Care </h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Shampoos</a></li>
+                                                    <li><a href="#">Conditioners</a></li>
+                                                    <li><a href="#">Hair Serums</a></li>
+                                                    <li><a href="#">Hair Tools</a></li>
+                                                    <li><a href="#">Styling Products</a></li>
+                                                    <li><a href="#">Hair Kits </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-3 pt-3">
+                                                <h6 class="mega-title">Shop by Price</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">$15-$35</a></li>
+                                                    <li><a href="#">$35-$55</a></li>
+                                                    <li><a href="#">$55-$75</a></li>
+                                                    <li><a href="#">$75-$95</a></li>
+                                                    <li><a href="#">Above $95</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-3 pt-3">
+                                                <h6 class="mega-title">By Hair Concern</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Dryness</a></li>
+                                                    <li><a href="#">Hair Growth</a></li>
+                                                    <li><a href="#">Dandruff</a></li>
+                                                    <li><a href="#">Damage Reapir</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-4 pt-3">
+                                                <div class="mega-promo-card-3 ">
+                                                    <p class="mb-1 text-light mt-5 pt-3">letest Offers</p>
+                                                    <h5 class="fw-bold mb-3">25% Off on Hair Care</h5>
+                                                    <a href="./shop.html" class="btn bg-white ">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about-us.html">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./blogs.html">Blogs</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav icons ms-auto mt-4 mt-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="#"><i
+                                        class="bi bi-search fs-5 text-dark"></i></a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="./checkout.html"><i
+                                        class="bi bi-heart fs-5 text-dark"></i></a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="./cart.html"><i
+                                        class="bi bi-bag fs-5 text-dark"></i></a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="./my-account.html"><i
+                                        class="bi bi-person fs-5 text-dark"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+
+
+    <header class="page-header" >
+        <div class="container" data-aos="fade-up">
+            <h2>My Account</h2>
+            <p class="breadcrumb-text mb-0"><a href="#">Home</a> / My Account</p>
+        </div>
+    </header>
+
+    <div class="container pb-5">
+        <div class="row g-5">
+
+            <div class="col-lg-4 col-xl-3">
+                <nav class="sidebar-nav">
+                    <a href="#" class="sidebar-link active" data-aos="fade-right">Personal Information</a>
+                    <a href="#" class="sidebar-link" data-aos="fade-right">My Orders</a>
+                    <a href="#" class="sidebar-link" data-aos="fade-right">Manage Address</a>
+                    <a href="#" class="sidebar-link" data-aos="fade-right">Payment Method</a>
+                    <a href="#" class="sidebar-link" data-aos="fade-right">Password Manager</a>
+                    <a href="#" class="sidebar-link" data-aos="fade-right">Logout</a>
+                </nav>
+            </div>
+
+            <div class="col-lg-8 col-xl-9">
+
+                <div class="profile-pic-container">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200"
+                        alt="Profile Picture" class="profile-pic">
+                    <div class="edit-badge" title="Edit Profile Picture">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                </div>
+
+                <form>
+                    <div class="row g-4">
+                        <div class="col-md-6" data-aos="fade-up">
+                            <label class="form-label">First Name <span class="required">*</span></label>
+                            <input type="text" class="form-control" value="Leslie">
+                        </div>
+                        <div class="col-md-6" data-aos="fade-left">
+                            <label class="form-label">Last Name <span class="required">*</span></label>
+                            <input type="text" class="form-control" value="Cooper">
+                        </div>
+
+                        <div class="col-12" data-aos="fade-left">
+                            <label class="form-label">Email <span class="required">*</span></label>
+                            <input type="email" class="form-control" value="example@gmail.com">
+                        </div>
+
+                        <div class="col-12" data-aos="fade-left">
+                            <label class="form-label">Phone <span class="required">*</span></label>
+                            <input type="tel" class="form-control" value="+0123-456-789">
+                        </div>
+
+                        <div class="col-12" data-aos="fade-left">
+                            <label class="form-label">Gender <span class="required">*</span></label>
+                            <select class="form-select">
+                                <option value="female" selected>Female</option>
+                                <option value="male">Male</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 text-start" data-aos="zoom-in" data-aos-delay="400">
+                            <button type="button" class="btn-update">Update Changes</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="row justify-content-center g-4" data-aos="zoom-in" data-aos-delay="400">
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-start">
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper"><i class="fas fa-box-open"></i></div>
+                        <div class="feature-text">
+                            <h5>Free Shipping</h5>
+                            <p>Free shipping for order above $50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-start " data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper"><i class="fas fa-wallet"></i></div>
+                        <div class="feature-text">
+                            <h5>Flexible Payment</h5>
+                            <p>Multiple secure payment options</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-start" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-box">
+                        <div class="feature-icon-wrapper"><i class="fas fa-headset"></i></div>
+                        <div class="feature-text">
+                            <h5>24x7 Support</h5>
+                            <p>We support online all days.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- NewsLetter -->
+    <section class="newslettes">
+        <div class="container">
+            <div class="row">
+                <div class="news-content text-center">
+                    <p class="fs20 " data-aos="fade-left"> Our Newsletter</p>
+                    <h2 class="fs45 mt-3 mb" data-aos="fade-right"> Subscribe to Our Newsletter to <br> Get <span class="yellow"> Updates on
+                            Our
+                            Latest Offers</span></h2>
+                    <p class="mt-3 fs18 gray mtt-2 " data-aos="fade-up">Get 25% off on your first order just by subscribing to our
+                        newsletter</p>
+                    <div class="subcribe-btn mt-5">
+                        <input type="text" placeholder="Enter Email Address" class="input" data-aos="fade-right">
+                        <a href="./contact.html" class="btn  mtt-2 " data-aos="fade-left">Subscribe</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- End NewsLetter -->
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-lg-5 col-xl-3  mt-4 tc" data-aos="fade-right">
+                    <div class="footer-logo">
+                        <img src="./assests/images/logo.png" alt="logo" width="60px"><span class="fw600 fs25"> Beauty
+                            Shop</span>
+                    </div>
+                    <p class="mt-4  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos cumque cum,
+                        explicabo amet.</p>
+
+                    <div class=" footer-icons ">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube dmt"></i></a>
+                    </div>
+                </div>
+
+                <div class=" col-6  col-md-3 col-lg-3 col-xl-2 mt-4 mtt-3 " data-aos="fade-up">
+                    <h4>Company</h4>
+                    <p class="mt-4"> <a href="./about-us.html">About Us </a> </p>
+                    <p> <a href="./blogs.html">Blogs </a></p>
+                    <p> <a href="./contact.html">Content Us </a></p>
+                    <p> <a href="./checkout.html">Career </a></p>
+                </div>
+
+                <div class=" col-sm-6 col-md-4 col-lg-4  col-xl-3 mt-4  mtt-3" data-aos="fade-up">
+                    <h4>Customer Services</h4>
+                    <p class="mt-4 "> <a href="./my-account.html">My Account </a></p>
+                    <p> <a href="./track-order.html">Track Your Order </a></p>
+                    <p> <a href="#">Return </a></p>
+                    <p> <a href="./faq.html">FAQ </a></p>
+                </div>
+
+                <div class=" col-sm-6 col-md-6 col-lg-6  col-xl-2 mt-4" data-aos="fade-up">
+                    <h4>Our Information</h4>
+                    <p class="mt-4 "> <a href="#">Privacy </a></p>
+                    <p> <a href="#">User Terms & Condition </a></p>
+                    <p> <a href="#">Return Policy </a></p>
+                </div>
+
+                <div class=" col-sm-6 col-md-6 col-lg-6  col-xl-2 mt-4" data-aos="fade-left">
+                    <h4>Content info</h4>
+                    <p class="mt-4 ">+0123-456-789 </p>
+                    <p> example@gmail.com </p>
+                    <p> 8502 Preston Rd. Inglewod, maine 98768 </p>
+                </div>
+
+                <div class="border-bottom mt-5"></div>
+
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <p class="fw500">Copyright @ 2025 <span class="yellow"> Beauty Shop Website.</span>All Right
+                        Reserved.</p>
+
+                    <div class="selcted-language">
+                        <select>
+                            <option value="English">English</option>
+                            <!-- <option value="English">Hindi</option>
+                    <option value="English">Tamil</option>
+                    <option value="English">France</option> -->
+                        </select>
+                        |
+                        <select>
+                            <option value="English">USD</option>
+                            <!-- <option value="English">Hindi</option>
+                    <option value="English">Tamil</option>
+                    <option value="English">France</option> -->
+                        </select>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, /* Animation ki speed (1000ms = 1 second) - Smooth feel ke liye */
+        once: false, /* Har baar scroll karne par animation hogi, ya sirf ek baar (true/false) */
+        offset: 100, /* Thoda scroll karne ke baad animation trigger ho */
+    });
+</script>
+
+</html>

@@ -1,0 +1,4071 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> About Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+        /* === Header code === */
+        nav {
+            background-color: white !important;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            z-index: 99999;
+            transition: all 0.3s ease;
+        }
+
+        a.nav-link.active {
+            color: #40b340 !important;
+            border-bottom: 1px solid #40b340;
+        }
+
+        .navbar-nav {
+            margin-left: 100px;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .nav-item {
+            padding-left: 20px;
+        }
+
+        nav li a:hover {
+            color: #40b340 !important;
+        }
+
+        nav ul li a {
+            color: black !important;
+        }
+
+        .icons {
+            margin-left: 50px;
+        }
+
+        .top-bar {
+            background-color: #1a331a;
+            font-size: 14px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-left: 12px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .navbar-brand span {
+            vertical-align: middle;
+        }
+
+        nav i {
+            font-weight: 600;
+        }
+
+        /* Common Text Styles for Mega Menu */
+        .mega-title {
+            color: #1a331a;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+
+        ul.mega-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        ul.mega-list li {
+            margin-bottom: 12px;
+        }
+
+        ul.mega-list li a {
+            color: #666 !important;
+            text-decoration: none;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            padding: 0;
+            display: inline-block;
+        }
+
+        ul.mega-list li a:hover {
+            color: #40b340 !important;
+            background: transparent;
+            transform: translateX(5px);
+        }
+
+        /* Promo Banner / Card Styling */
+        .mega-promo-card-1 {
+            background-image: url("../Beauti-shop/assests/images/mega-bg-1.jpg");
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mega-promo-card-2 {
+            background-image: url("../Beauti-shop/assests/images/mega-bg-2.jpg");
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mega-promo-card-3 {
+            background-image: url("../Beauti-shop/assests/images/mega-bg-3.jpg");
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bg-promo-makeup {
+            background: linear-gradient(135deg, #d63384, #f06292);
+        }
+
+        .bg-promo-hair {
+            background: linear-gradient(135deg, #0dcaf0, #0077b6);
+        }
+
+        .btn-shop-now {
+            background-color: #1a331a;
+            color: white;
+            border-radius: 25px;
+            padding: 8px 25px;
+            font-size: 14px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-shop-now:hover {
+            background-color: #40b340;
+            color: white;
+        }
+
+        /* === End Header === */
+
+        :root {
+            --primary-green: #2B4E32;
+            --text-muted: #8E8E8E;
+            --light-bg: #F9F9F9;
+            --border-color: #EAEAEA;
+            --star-color: #FFC107;
+            --accent-orange: #D97A52;
+        }
+
+        .fs20 {
+            font-size: 20px;
+        }
+
+        .yellow {
+            color: #ce8c1d;
+        }
+
+        .fs45 {
+            font-size: 45px;
+        }
+
+        h2 {
+            font-weight: 700 !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 600;
+        }
+
+        .fw600 {
+            font-weight: 600;
+        }
+
+        .fs25 {
+            font-size: 27px;
+            font-weight: 700;
+        }
+
+        /* ==== End Header ==== */
+
+
+
+
+        /* === about us === */
+        .about-us {
+            width: 100%;
+            background-image: url('../Beauti-shop/assests/images/about-us-banner.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding: 30px;
+            border-radius: 20px;
+            padding-top: 100px;
+            padding-bottom: 160px;
+        }
+
+        .about-img-1 img {
+            border-radius: 10px;
+            border-top-left-radius: 170px;
+            margin-top: 50px;
+        }
+
+        .about-img-2 img {
+            border-radius: 10px;
+            border-top-right-radius: 170px;
+            margin-top: 50px;
+
+        }
+
+        .d-gird {
+            display: grid;
+            grid-template-columns: 1fr 0.6fr;
+            gap: 15px;
+        }
+
+        .images img {
+            object-fit: cover;
+            height: 400px !important;
+            width: 100% !important;
+        }
+
+        .about-img-3 img {
+            width: 100%;
+            object-fit: cover;
+            height: 280px !important;
+            margin-top: 30px;
+            border-radius: 15px;
+        }
+
+        .about-img-4 img {
+            width: 100%;
+            object-fit: cover;
+            height: 280px !important;
+            margin-top: 30px;
+            border-radius: 15px;
+            border-bottom-right-radius: 140px;
+        }
+
+
+
+        .badge-container {
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            position: absolute !important;
+            top: 55%;
+            right: 30%;
+        }
+
+        .badge-container:hover {
+            transform: scale(1.05);
+        }
+
+        .spinning-badge {
+            width: 100%;
+            height: 100%;
+            animation: spin 15s linear infinite;
+        }
+
+        .count {
+            background-color: #1a3622;
+            padding: 25px;
+            border-radius: 20px;
+            color: #dedbd6;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .fs20 {
+            font-size: 20px;
+        }
+
+
+        /* === End About us === */
+
+
+        .team-section {
+            width: 100%;
+            background-image: url('../Beauti-shop/assests/images/background-2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding: 20px;
+            border-radius: 20px;
+            padding-bottom: 100px !important;
+            padding-top: 100px;
+        }
+
+
+        /* --- Header Section --- */
+        .page-header {
+            background-color: #f9fafb;
+            /* Light grey background */
+            padding: 50px 0;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .page-header h2 {
+            font-weight: 700;
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .breadcrumb-text {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .breadcrumb-text a {
+            color: #6c757d;
+            text-decoration: none;
+        }
+
+        .sine {
+            font-family: 'Great Vibes', cursive;
+            font-size: 35px;
+            color: #4a4a4a;
+            letter-spacing: 3px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+
+        /* === NewsLetter === */
+
+        .newslettes {
+            width: 100%;
+            background-image: url('../Beauti-shop/assests/images/background-2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding: 20px;
+            border-radius: 20px;
+            padding-bottom: 100px !important;
+            padding-top: 100px;
+        }
+
+        .news-content input {
+            padding: 20px 110px 20px 20px;
+            border-radius: 30px;
+            background-color: white;
+            border: none;
+
+        }
+
+        /* ===  End NewsLetter === */
+
+
+        /* ===  Footer === */
+        footer {
+            width: 100%;
+            background-image: url('../Beauti-shop/assests/images/background-2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            padding: 20px;
+            border-radius: 20px;
+            padding-bottom: 10px !important;
+            padding-top: 100px;
+        }
+
+        footer h4 {
+            font-size: 1.4rem;
+        }
+
+        footer .container {
+            background-color: white !important;
+            border-radius: 10px;
+            padding: 20px;
+            padding-bottom: 50px;
+        }
+
+        .footer-icons {
+            margin-top: 40px !important;
+        }
+
+        .footer-icons i {
+            /* background-color: #15271a; */
+            color: #1d502b;
+            border-radius: 50%;
+            padding: 6px 9px;
+            font-size: 18px;
+            border: solid 1px gray;
+            margin-right: 10px;
+        }
+
+        footer p {
+            margin-top: 15px;
+            color: gray;
+
+        }
+
+        footer a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        footer .selcted-language {
+            color: gray;
+            margin-top: 40px;
+        }
+
+        footer .selcted-language select {
+            border: none;
+            color: gray;
+        }
+
+        /* Hover Eeffct footer */
+
+        footer a {
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+            transition: color 0.3s ease;
+            padding-bottom: 2px;
+        }
+
+        footer a:hover {
+            color: #28a745;
+        }
+
+        footer a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #28a745;
+            transition: width 0.3s ease-in-out;
+        }
+
+        footer a:hover::after {
+            width: 100%;
+        }
+
+
+        .footer-icons a i {
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+        }
+
+        .footer-icons a:hover i {
+            color: #28a745;
+            transform: scale(1.0) translateY(-3px);
+            filter: drop-shadow(0px 5px 8px rgba(40, 167, 69, 0.4));
+        }
+
+        .footer-icons a::after {
+            display: none !important;
+        }
+
+
+        @keyframes fadeInCheck {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .btn {
+            background-color: #1a331a;
+            border-radius: 30px;
+            border: none;
+            padding: 15px 30px;
+            color: white;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            z-index: 1;
+            transition: color 0.4s ease;
+        }
+
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #2a522a;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            top: 0;
+            color: white !important;
+
+        }
+
+        .l {
+            color: #1a3622;
+        }
+
+        .btn:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            color: white !important;
+        }
+
+
+        /* === End  Footer === */
+
+
+
+
+
+
+
+
+        /* my slider */
+        /* ========================================= */
+        /* OFFCANVAS (MOBILE SIDEBAR) STYLING */
+        /* ========================================= */
+
+
+        @media (min-width: 991px) and (max-width: 1200px) {
+            .navbar-nav {
+                font-size: 16px;
+                margin-left: 10px;
+            }
+
+            .navbar-brand span {
+                font-size: 18px;
+            }
+
+            .navbar-brand img {
+                width: 40px;
+            }
+
+            .nav-item {
+                padding-left: 6px !important;
+            }
+
+
+            .nav-item {
+                padding: 10px 0;
+            }
+
+            .nav-link {
+                /* font-size: 1.1rem; */
+                margin: 0;
+            }
+
+            .mobile-actions {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 20px;
+            }
+
+            .btn-partner {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 1200px) and (max-width: 1300px) {
+            .navbar-nav {
+                margin-left: 60px !important;
+                font-size: 16px;
+            }
+
+            .navbar-brand span {
+                font-size: 18px;
+            }
+
+            .navbar-brand img {
+                width: 40px;
+            }
+
+            .nav-item {
+                padding-left: 13px;
+            }
+
+            .dmt {
+                margin-top: 10px;
+            }
+        }
+
+
+
+        @media (min-width: 1300px) and (max-width: 1399px) {
+
+            .navbar-nav {
+                margin-left: 50px !important;
+                font-size: 17px;
+            }
+
+            .navbar-brand span {
+                font-size: 20px;
+            }
+
+            .navbar-brand img {
+                width: 40px;
+            }
+
+            .nav-item {
+                padding-left: 11px;
+            }
+        }
+
+
+
+
+        /* Desktop view ke liye */
+        @media (min-width: 992px) {
+            .nav-item.mega-dropdown {
+                position: static !important;
+            }
+
+            .mega-menu-box {
+                position: absolute;
+                top: 100%;
+                /* Navbar ke bilkul niche */
+                left: 50%;
+                /* Animation ke liye translate use kiya hai margin ki jagah */
+                transform: translate(-50%, 15px);
+                width: 85%;
+                max-width: 1000px;
+                background-color: #ffffff;
+                border-radius: 12px;
+                padding: 35px;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+                pointer-events: none;
+                z-index: 9999;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+            }
+
+            .mega-menu-box::before {
+                content: "";
+                position: absolute;
+                top: -20px;
+                left: 0;
+                width: 100%;
+                height: 20px;
+                background: transparent;
+            }
+
+            /* Hover state */
+            .nav-item.mega-dropdown:hover .mega-menu-box {
+                visibility: visible;
+                opacity: 1;
+                transform: translate(-50%, 0);
+                /* Slide hoke upar touch karega */
+                pointer-events: auto;
+            }
+        }
+
+
+
+        /* ========================================= */
+        /* PREMIUM OFFCANVAS (MOBILE SIDEBAR) STYLING*/
+        /* ========================================= */
+        @media (max-width: 991px) {
+            .offcanvas {
+                width: 300px !important;
+                border-left: none;
+                box-shadow: -5px 0 30px rgba(0, 0, 0, 0.15);
+            }
+
+            .offcanvas-header {
+                background-color: #1a331a;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                color: white;
+            }
+
+            .offcanvas-body {
+                padding: 15px;
+            }
+
+            .navbar-nav {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+
+            .nav-item {
+                padding-left: 0;
+                border-bottom: 1px solid #f0f0f0;
+                padding: 5px 0;
+            }
+
+            .nav-link {
+                font-size: 1.1rem;
+                margin: 0;
+                padding: 12px 10px !important;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .icons {
+                margin-left: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                background: #f8f9fa;
+                padding: 15px 0;
+                border-radius: 10px;
+            }
+
+            /* .icons .nav-item {
+        border: none;
+    } */
+
+            .mega-menu-box {
+                display: none;
+                background-color: #ffffff;
+                padding: 10px 15px 25px 15px;
+                border-radius: 12px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+                border: 1px solid #eaeaea;
+            }
+
+            .mega-menu-box.show {
+                display: block;
+            }
+
+            .mega-title {
+                color: #40b340;
+                font-size: 15px;
+                margin-top: 20px;
+                margin-bottom: 5px;
+                padding-bottom: 8px;
+                border-bottom: 1px dashed #e0e0e0;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            ul.mega-list li {
+                margin-bottom: 0;
+            }
+
+            ul.mega-list li a {
+                display: block;
+                padding: 12px 10px;
+                font-size: 15px;
+                border-bottom: 1px solid #f5f5f5;
+                color: #555 !important;
+                border-radius: 6px;
+            }
+
+            ul.mega-list li:last-child a {
+                border-bottom: none;
+            }
+
+            ul.mega-list li a:hover,
+            ul.mega-list li a:active {
+                background-color: #f0fbf0;
+                color: #40b340 !important;
+                transform: translateX(4px);
+            }
+
+            .mega-promo-card {
+                padding: 25px 20px;
+                min-height: auto;
+                margin-top: 25px;
+                border-radius: 12px;
+                background: linear-gradient(135deg, #b88a44, #d4a760);
+                box-shadow: 0 6px 15px rgba(184, 138, 68, 0.3);
+            }
+        }
+
+
+
+
+
+
+        /* ======================================================= */
+        /* MEGA MENU HOVER GAP FIX (INVISIBLE BRIDGE METHOD)       */
+        /* ======================================================= */
+
+        @media (min-width: 992px) {
+
+            /* 1. Bridge Banane Ka Code (Main Fix) */
+            .mega-menu-box::before {
+                content: "";
+                position: absolute;
+
+                /* DHYAN DEIN: Agar abhi bhi gap aaye, toh in dono numbers ko badha dein (e.g., -40px aur 40px) */
+                top: -30px;
+                height: 30px;
+
+                left: 0;
+                width: 100%;
+                background-color: transparent;
+                /* Ye transparent rahega taaki dikhe nahi par mouse ko pakad le */
+                z-index: 10;
+                cursor: default;
+            }
+
+            /* 2. Menu ki Position aur Animation */
+            .mega-menu-box {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                /* Box ko center karne ke liye */
+
+                /* Box ko thoda niche rakhne ke liye margin use karein, translate nahi */
+                margin-top: 15px;
+
+                visibility: hidden;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.3s ease-in-out;
+            }
+
+            /* 3. Hover karne par Menu ka Behavior */
+            .nav-item.mega-dropdown:hover .mega-menu-box {
+                visibility: visible;
+                opacity: 1;
+                margin-top: 0px;
+                /* Hover par box thoda upar aakar link se jud jayega */
+                pointer-events: auto;
+            }
+        }
+
+
+
+
+        @media (max-width: 991px) {
+            .offcanvas {
+                width: 250px !important;
+                /* Premium width */
+            }
+
+            ul.navbar-nav {
+                margin-left: 0 !important;
+                align-items: flex-start !important;
+                padding-top: 20px;
+            }
+
+            li.nav-item {
+                padding-left: 0 !important;
+                width: 100%;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            }
+
+            .btn-close {
+                filter: invert(1);
+            }
+
+            .navbar-brand {
+                margin-left: 10px;
+            }
+
+            .icons a.nav-link {
+                padding-left: 20px;
+            }
+
+            ul.navbar-nav.icons {
+                display: ruby;
+            }
+
+            .top-bar {
+                display: none;
+            }
+        }
+
+
+
+
+
+
+        /* === Media Query  === */
+        /* ========================================= */
+        /* Mobile View Media Query start */
+        /* ========================================= */
+
+
+        @media (max-width: 540px) {
+
+            .trust i {
+                width: 34px;
+            }
+
+            .trust {
+                font-size: 17px;
+                padding: 15px 20px;
+            }
+
+            .trust .gap-2 {
+                gap: 1.5rem !important;
+            }
+
+            .fs30 {
+                font-size: 41px;
+            }
+
+            /* == category == */
+
+            .catagory-imges {
+                flex-direction: column;
+            }
+
+            .catagory-imges img {
+                width: 100%;
+            }
+
+            .fast-delivery {
+                margin-top: 90px;
+            }
+
+            .secure-payment {
+                margin-top: 40px;
+            }
+
+            .category .image.text-center {
+                margin-top: 40px;
+            }
+
+            .category .fs45 {
+                font-size: 27px;
+            }
+
+            .category {
+                padding: 0px !important;
+            }
+
+            .category img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                border-radius: 50%;
+                object-fit: cover;
+                display: block;
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+            .category .bg-1 {
+                padding: 15px;
+            }
+
+            .category .bg {
+                padding: 15px;
+            }
+
+            .badge-container {
+                top: 105%;
+            }
+
+            /* === End category === */
+
+
+            /* === About  === */
+
+            .about-us .mt-100 {
+                margin-top: 150px !important;
+            }
+
+            .about-us {
+                background-position: right;
+                padding: 0px;
+                padding-bottom: 50px !important;
+            }
+
+            .border-end {
+                border: none !important;
+                margin-top: 10px;
+            }
+
+            .mb br {
+                display: none;
+            }
+
+            .about-us .fs45 {
+                font-size: 40px;
+            }
+
+            /* end === About  === */
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .btn-view-all {
+                margin-top: 15px;
+            }
+
+            .summer-bg-1 img {
+                height: auto;
+            }
+
+            .Products {
+                padding: 0px;
+                padding-bottom: 100px !important;
+            }
+
+            .tc {
+                text-align: center;
+            }
+
+            .bg-img .gap-5 {
+                gap: 1.8rem !important;
+            }
+
+            .bg-image {
+                height: 250px;
+            }
+
+            .bg-image-1 {
+                height: 250px;
+            }
+
+
+            .offer {
+                padding: 0px;
+                padding-bottom: 100px;
+            }
+
+            .weeky-bg {
+                padding: 15px !important;
+                padding-bottom: 30px;
+            }
+
+            .weeky-bg .fs45 {
+                font-size: 26px;
+            }
+
+            .new-project {
+                padding: 0px;
+                padding-top: 70px;
+                padding-bottom: 100px;
+            }
+
+            .mtt {
+                margin-top: 0px !important;
+            }
+
+            .mtt-1 {
+                margin-top: 10px !important;
+            }
+
+            .new-project-bg-1 img {
+                height: auto;
+                width: 100%;
+            }
+
+            .news {
+                padding: 0px;
+                padding-top: 100px !important;
+            }
+
+            .news .fs45 {
+                font-size: 40px;
+                margin-top: 20px !important;
+            }
+
+            .mtt-2 {
+                margin-top: 30px !important;
+            }
+
+            .mtt-3 {
+                margin-top: 50px !important;
+            }
+
+            .mt-20 {
+                margin-top: 20px !important;
+            }
+
+            .follow-bg {
+                padding-top: 0px;
+                padding-bottom: 50px !important;
+            }
+
+            .faq-bg {
+                padding: 0px;
+                padding-top: 70px;
+                padding-bottom: 50px !important;
+            }
+
+            .faq-bg .fs45 {
+                font-size: 42px;
+            }
+
+            .newslettes {
+                padding: 0px;
+                padding-top: 100px;
+                padding-bottom: 0px !important;
+            }
+
+            .newslettes .fs45 {
+                font-size: 37px;
+            }
+        }
+
+        @media (min-width: 501px) and (max-width: 767px) {
+            .subcribe-btn .mtt-2 {
+                margin-top: 0px !important;
+            }
+
+        }
+
+        @media (min-width: 575px) and (max-width: 767px) {
+            .ht {
+                margin-top: 0px !important;
+            }
+
+        }
+
+
+
+        @media (min-width: 540px) and (max-width: 767px) {
+
+
+            .trust {
+                font-size: 17px;
+                padding: 15px 20px;
+            }
+
+            .trust .gap-2 {
+                gap: 1.5rem !important;
+            }
+
+            .fs30 {
+                font-size: 38px;
+            }
+
+            /* == category == */
+
+
+            .catagory-imges img {
+                width: 100%;
+            }
+
+            .fast-delivery {
+                margin-top: 90px;
+            }
+
+            .secure-payment {
+                margin-top: 85px;
+            }
+
+            .category .image.text-center {
+                margin-top: 40px;
+            }
+
+            .category .fs45 {
+                font-size: 27px;
+            }
+
+            .category {
+                padding: 0px !important;
+            }
+
+            .category img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                border-radius: 50%;
+                object-fit: cover;
+                display: block;
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+            .category .bg-1 {
+                padding: 15px;
+            }
+
+            .category .bg {
+                padding: 15px;
+            }
+
+            .badge-container {
+                top: 105%;
+            }
+
+            /* === End category === */
+
+
+            /* === About  === */
+
+            .about-us .mt-100 {
+                margin-top: 150px !important;
+            }
+
+            .about-us {
+                background-position: right;
+                padding: 0px;
+                padding-bottom: 50px !important;
+            }
+
+            .border-end {
+                border: none !important;
+                margin-top: 10px;
+            }
+
+            .mb br {
+                display: none;
+            }
+
+            .about-us .fs45 {
+                font-size: 40px;
+            }
+
+            /* end === About  === */
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .btn-view-all {
+                margin-top: 15px;
+            }
+
+            .summer-bg-1 img {
+                height: auto;
+            }
+
+            .Products {
+                padding: 0px;
+                padding-bottom: 100px !important;
+            }
+
+            .tc {
+                text-align: center;
+            }
+
+            .bg-img .gap-5 {
+                gap: 1.8rem !important;
+            }
+
+            .bg-image {
+                height: 250px;
+            }
+
+            .bg-image-1 {
+                height: 250px;
+            }
+
+
+            .offer {
+                padding: 0px;
+                padding-bottom: 100px;
+            }
+
+            .weeky-bg {
+                padding: 15px !important;
+                padding-bottom: 30px;
+            }
+
+            .weeky-bg .fs45 {
+                font-size: 26px;
+            }
+
+            .new-project {
+                padding: 0px;
+                padding-top: 70px;
+                padding-bottom: 100px;
+            }
+
+            .mtt {
+                margin-top: 0px !important;
+            }
+
+            .mtt-1 {
+                margin-top: 10px !important;
+            }
+
+            .new-project-bg-1 img {
+                height: auto;
+                width: 100%;
+            }
+
+            .news {
+                padding: 0px;
+                padding-top: 100px !important;
+            }
+
+            .news .fs45 {
+                font-size: 40px;
+                margin-top: 20px !important;
+            }
+
+            .mtt-2 {
+                margin-top: 30px !important;
+            }
+
+            .mtt-3 {
+                margin-top: 50px !important;
+            }
+
+            .mt-20 {
+                margin-top: 20px;
+            }
+
+            .follow-bg {
+                padding-top: 0px;
+                padding-bottom: 50px !important;
+            }
+
+            .faq-bg {
+                padding: 0px;
+                padding-top: 70px;
+                padding-bottom: 50px !important;
+            }
+
+            .faq-bg .fs45 {
+                font-size: 42px;
+            }
+
+            .newslettes {
+                padding: 0px;
+                padding-top: 100px;
+                padding-bottom: 0px !important;
+            }
+
+            .newslettes .fs45 {
+                font-size: 37px;
+            }
+
+            .catagory-imges {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr !important;
+            }
+
+        }
+
+
+
+
+        /* End Mobile View CSS */
+
+
+
+
+        /* ========================================= */
+        /* Tablet View Media Query start */
+        /* ========================================= */
+        @media (min-width: 768px) and (max-width: 992px) {
+
+            .news .fs45 {
+                font-size: 37px;
+                margin-top: 20px;
+            }
+
+            .category .mtt {
+                margin-top: 3rem !important;
+            }
+
+            .beauty-hub .fs30 {
+                font-size: 40px;
+            }
+
+            .beauty-hub .fast-delivery {
+                margin-top: 80px
+            }
+
+            .beauty-hub .secure-payment {
+                margin-top: 80px
+            }
+
+            .newslettes .mb br {
+                display: none;
+            }
+
+            .category .image.text-center {
+                margin-top: 20px;
+            }
+
+            .badge-container {
+                width: 140px;
+                height: 140px;
+                top: 53%;
+            }
+
+
+
+            .catagory-imges {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr !important;
+            }
+
+            .category img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                border-radius: 50%;
+                object-fit: cover;
+                display: block;
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+            .about-us {
+                background-position: right;
+                padding-top: 0px;
+                padding: 0px !important;
+            }
+
+            .about-content {
+                padding: 0px !important;
+                padding-bottom: 100px !important;
+                margin-top: 0px !important;
+
+            }
+
+            .offer .fs45 {
+                font-size: 30px;
+            }
+
+            .break {
+                display: block !important;
+            }
+
+            .new-project .mtt,
+            .mtt-1 {
+                margin-top: 0px !important;
+                padding-top: 10px !important;
+            }
+
+            .category .fs45 {
+                font-size: 27px;
+            }
+
+            .follow {
+                margin-top: 30px !important;
+            }
+
+            .follow-bg {
+                padding: 0px;
+                padding-bottom: 50px !important;
+            }
+
+            .faq-bg {
+                padding-bottom: 50px !important;
+            }
+
+            .newslettes {
+                padding-bottom: 50px !important;
+            }
+
+            .brr {
+                display: block !important;
+            }
+        }
+
+        @media (max-width: 541px) {
+            .mb br {
+                display: none !important;
+            }
+
+            .mtt-2 {
+                margin-top: 30px;
+            }
+        }
+
+        /* ========================================= */
+        /* loptop Screen View Media Query start */
+        /* ========================================= */
+
+
+        @media (min-width: 993px) and (max-width: 1200px) {
+
+            .beauty-hub .show {
+                display: block !important;
+            }
+
+            .fs30 {
+                font-size: 54px;
+            }
+
+            .fast-delivery {
+                margin-top: 80px;
+            }
+
+
+            .secure-payment {
+                margin-top: 80px;
+            }
+
+            .catagory-imges {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr 1fr !important;
+            }
+
+            .category img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                border-radius: 50%;
+                object-fit: cover;
+                display: block;
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+            .dv {
+                margin-top: 50px;
+            }
+
+            .about-us {
+                background-position: right;
+                padding-top: 0px;
+            }
+
+            .about-content {
+                margin-top: 0px !important;
+                padding: 0px !important;
+            }
+
+            .dtc {
+                justify-content: center;
+            }
+
+            .offer .weeky-bg .fs45 {
+                font-size: 40px !important;
+            }
+
+            .brr {
+                display: block !important;
+            }
+
+        }
+
+
+        /* ========================================= */
+        /* desktop screen View Media Query start */
+        /* ========================================= */
+        @media (min-width: 1201px) and (max-width: 1400px) {
+            .fs30 {
+                font-size: 49px !important;
+            }
+
+            .dt {
+                margin-top: 30px;
+            }
+
+            .category img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                border-radius: 50%;
+                object-fit: cover;
+                display: block;
+                max-width: 250px;
+                margin: 0 auto;
+            }
+
+            .category .fs45 {
+                font-size: 42px;
+            }
+
+            .about-us {
+                padding-top: 0px !important;
+            }
+
+            .count .fs45 {
+                font-size: 35px !important;
+            }
+
+            .follow-bg {
+                padding: 50px 0px !important;
+            }
+
+            .footer-icons .dmt {
+                margin-top: 10px;
+            }
+        }
+
+        .fs28 {
+            font-size: 28px;
+        }
+
+
+        /* === our misson visison === */
+
+        .info-card {
+            background: #ffffff;
+            border: none;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .icon-circle {
+            width: 45px;
+            height: 45px;
+            background-color: #1a3c28;
+            color: #dca048;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+
+        .card-title-custom {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #333;
+            margin: 0;
+        }
+
+        .card-text-custom {
+            color: #777;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-top: 15px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .watermark-icon {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 6rem;
+            color: #f4f4f4;
+            z-index: 1;
+            transform: rotate(-15deg);
+        }
+
+        /* --- Video Section --- */
+        .video-container {
+            position: relative;
+            margin-top: 40px;
+        }
+
+        .video-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        /* Play Button Overlay */
+        .play-btn-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 255, 255, 0.25);
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 5;
+        }
+
+        .play-btn-wrapper:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            transform: translate(-50%, -50%) scale(1.05);
+            /* Slight zoom on hover */
+        }
+
+        .play-btn-wrapper i {
+            color: #ffffff;
+            font-size: 2rem;
+            margin-left: 5px;
+        }
+
+        /* --- Stats Banner --- */
+        .stats-banner {
+            background-color: #1a3c28;
+            border-radius: 12px;
+            position: relative;
+            margin-top: -60px;
+            z-index: 10;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .stat-item {
+            padding: 25px 20px;
+        }
+
+        .stat-number {
+            color: #dca048;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .stat-text {
+            color: #dcdcdc;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .stat-divider {
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        @media (max-width: 767px) {
+            .stat-divider {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            }
+
+            .stat-item:last-child {
+                border-bottom: none;
+            }
+
+            .stats-banner {
+                margin-top: -30px;
+            }
+        }
+
+        /* ---  End Vision & Mission Cards --- */
+
+
+
+
+
+        /* ===Team Section === */
+
+        .section-header {
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .subtitle-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            font-weight: 500;
+            color: #555;
+            position: relative;
+            z-index: 2;
+        }
+
+
+
+        .main-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #222;
+            margin: 0;
+        }
+
+        .highlight-text {
+            color: #bfa068;
+            /* Golden/Tan color */
+        }
+
+        /* --- Team Card Styling --- */
+        .team-card {
+            text-align: left;
+        }
+
+        .img-wrapper {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            background-color: #e6e6e6;
+            /* Fallback gray background */
+            margin-bottom: 15px;
+        }
+
+        .team-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        /* Social Icons Overlay */
+        .social-overlay {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            display: flex;
+            gap: 8px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+
+        /* Show icons on hover (and keep visible on the first card for the demo effect) */
+        .img-wrapper:hover .social-overlay,
+        .img-wrapper.active .social-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            text-decoration: none;
+            backdrop-filter: blur(2px);
+            transition: all 0.2s ease;
+        }
+
+        .social-icon:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+        }
+
+        /* Text Details */
+        .member-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: #333;
+            margin: 0 0 4px 0;
+        }
+
+        .member-role {
+            font-size: 14px;
+            color: #888;
+            margin: 0;
+        }
+
+        /* === End Team Section === */
+
+
+
+
+        /* === Scroll Slider === */
+        .marquee-container {
+            background-color: #1a3622;
+            padding: 18px 0;
+            overflow: hidden;
+            display: flex;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .marquee-track {
+            display: flex;
+            animation: endless-scroll 40s linear infinite;
+        }
+
+        .marquee-group {
+            display: flex;
+        }
+
+        .marquee-item {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding-right: 40px;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .marquee-item::after {
+            content: "";
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23c49a5b' d='M21.4,2.6c-0.5-0.5-1.4-0.6-2-0.1c-2.4,1.8-7.3,5-10,8.8C6.9,10.4,4.3,10.7,2.1,12.1c-0.5,0.3-0.5,1-0.1,1.4 c1.5,1.1,3.3,1.6,5.2,1.4c-1.2,1.7-1.9,3.8-1.7,5.8c0,0.5,0.6,0.8,1.1,0.6c1.9-1,3.3-2.6,4.1-4.6c1.8,0.3,3.7-0.1,5.2-1.3 c0.5-0.4,0.5-1.1,0.1-1.6c-3.3-3.2-1.1-7.1,3.9-10.3C20.4,3.1,20.6,2.4,21.4,2.6z M11.5,16.5c-0.7,1.4-1.8,2.6-3.1,3.3 c-0.1-1.6,0.4-3.1,1.4-4.4C10.3,15.8,10.9,16.2,11.5,16.5z'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        @keyframes endless-scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* ===  End Scroll Slider === */
+
+
+        /* ===Tesimonal  */
+
+
+        .testimonial-section {
+            width: 100%;
+            background-image: url('../images/background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding: 30px;
+            border-radius: 20px;
+            padding-top: 80px;
+            padding-bottom: 100px;
+            padding: 80px 0;
+            position: relative;
+        }
+
+
+        .testimonial-section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        /* --- Header --- */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .sub-heading {
+            font-size: 15px;
+            color: #6c757d;
+            margin-bottom: 8px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .main-heading {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 0;
+            line-height: 1.2;
+        }
+
+        .main-heading span {
+            color: #c49e59;
+            /* Premium Gold */
+        }
+
+        /* --- Avatar Carousel --- */
+        .avatar-carousel-wrapper {
+            width: 100%;
+            overflow: hidden;
+            padding: 20px 0;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+
+
+        .avatar-track {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: max-content;
+            position: relative;
+            left: 50%;
+            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            z-index: 1;
+        }
+
+        .avatar-item {
+            position: relative;
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .avatar-item img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: all 0.4s ease;
+            opacity: 0.5;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .avatar-item:hover img {
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+
+        /* Active Avatar */
+        .avatar-item.active img {
+            width: 90px;
+            height: 90px;
+            opacity: 1;
+            box-shadow: 0 0 0 4px #f9f9f9, 0 0 0 6px #c49e59;
+            /* Gold Ring */
+            transform: scale(1);
+        }
+
+        /* --- Slider Content (THE GRID FIX) --- */
+        .slider-content-wrapper {
+            position: relative;
+            max-width: 850px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 80px;
+        }
+
+        .bg-quote {
+            position: absolute;
+            font-size: 150px;
+            color: rgba(0, 0, 0, 0.03);
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            font-family: serif;
+            pointer-events: none;
+        }
+
+        /* YAHAN HAI MAGIC FIX: Grid Stacking */
+        .reviews-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            position: relative;
+            z-index: 1;
+        }
+
+        .review-slide {
+            /* Grid Area 1/1 puts all slides in the EXACT same space */
+            grid-area: 1 / 1;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+            pointer-events: none;
+        }
+
+        .review-slide.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        /* Typography Inside Slide */
+        .review-title {
+            font-weight: 700;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        .review-text {
+            color: #555;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .review-rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .review-rating span {
+            color: #111;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+
+        .review-author {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 3px;
+            color: #111;
+        }
+
+        .review-role {
+            color: #888;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+
+
+
+        /* ===Tesimonal  */
+
+
+        .testimonial-section {
+            width: 100%;
+            background-image: url('../Beauti-shop/assests/images/background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding: 30px;
+            border-radius: 20px;
+            padding-top: 80px;
+            padding-bottom: 100px;
+            padding: 80px 0;
+            position: relative;
+        }
+
+
+        .testimonial-section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        /* --- Header --- */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .sub-heading {
+            font-size: 15px;
+            color: #6c757d;
+            margin-bottom: 8px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .main-heading {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 0;
+            line-height: 1.2;
+        }
+
+        .main-heading span {
+            color: #c49e59;
+            /* Premium Gold */
+        }
+
+        /* --- Avatar Carousel --- */
+        .avatar-carousel-wrapper {
+            width: 100%;
+            overflow: hidden;
+            padding: 20px 0;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+
+
+        .avatar-track {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: max-content;
+            position: relative;
+            left: 50%;
+            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            z-index: 1;
+        }
+
+        .avatar-item {
+            position: relative;
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .avatar-item img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: all 0.4s ease;
+            opacity: 0.5;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .avatar-item:hover img {
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+
+        /* Active Avatar */
+        .avatar-item.active img {
+            width: 90px;
+            height: 90px;
+            opacity: 1;
+            box-shadow: 0 0 0 4px #f9f9f9, 0 0 0 6px #c49e59;
+            /* Gold Ring */
+            transform: scale(1);
+        }
+
+        /* --- Slider Content (THE GRID FIX) --- */
+        .slider-content-wrapper {
+            position: relative;
+            max-width: 850px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 80px;
+        }
+
+        .bg-quote {
+            position: absolute;
+            font-size: 150px;
+            color: rgba(0, 0, 0, 0.03);
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            font-family: serif;
+            pointer-events: none;
+        }
+
+        /* YAHAN HAI MAGIC FIX: Grid Stacking */
+        .reviews-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            position: relative;
+            z-index: 1;
+        }
+
+        .review-slide {
+            /* Grid Area 1/1 puts all slides in the EXACT same space */
+            grid-area: 1 / 1;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+            pointer-events: none;
+        }
+
+        .review-slide.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        /* Typography Inside Slide */
+        .review-title {
+            font-weight: 700;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        .review-text {
+            color: #555;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .review-rating {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .review-rating span {
+            color: #111;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+
+        .review-author {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 3px;
+            color: #111;
+        }
+
+        .review-role {
+            color: #888;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* --- Navigation --- */
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: none;
+            color: white;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .prev-btn {
+            left: 0;
+            background-color: #c49e59;
+        }
+
+        .prev-btn:hover {
+            background-color: #b08d4f;
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        .next-btn {
+            right: 0;
+            background-color: #1e3624;
+        }
+
+        .next-btn:hover {
+            background-color: #15271a;
+            transform: translateY(-50%) scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .slider-content-wrapper {
+                padding: 0 20px;
+            }
+
+            .nav-btn {
+                position: static;
+                transform: none;
+                margin: 30px 10px 0;
+                display: inline-flex;
+            }
+
+            .prev-btn:hover,
+            .next-btn:hover {
+                transform: scale(1.05);
+            }
+
+            .main-heading {
+                font-size: 2rem;
+            }
+        }
+
+
+
+
+        /* === End Testmonial */
+
+
+
+
+        /*==== Beauty Innovation ==== */
+
+        .awards-section {
+            width: 100%;
+            background-image: url('../Beauti-shop/assests/images/background-2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding: 30px;
+            border-radius: 20px;
+            padding-top: 80px;
+            padding-bottom: 100px;
+            padding: 80px 0;
+            position: relative;
+        }
+
+
+        .section-header {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .subtitle-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+            position: relative;
+            z-index: 2;
+        }
+
+
+
+        .main-title {
+            font-size: 38px;
+            font-weight: 700;
+            color: #222;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .highlight-text {
+            color: #c69c6d;
+            /* Golden/Tan color matching the image */
+        }
+
+        /* --- Award Item Styling --- */
+        .award-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        /* Badge Graphic Area */
+        .award-badge-container {
+            min-width: 140px;
+            text-align: center;
+            margin-right: 30px;
+        }
+
+        /* CSS Approximation of the Laurel Wreath */
+        .laurel-badge {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border-left: 3px solid #3b5736;
+            /* Dark green hints */
+            border-right: 3px solid #3b5736;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        /* Adding small leaves using CSS */
+        .laurel-badge::before,
+        .laurel-badge::after {
+            content: "\f06c";
+            /* FontAwesome leaf unicode */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            bottom: -5px;
+            color: #3b5736;
+            font-size: 20px;
+        }
+
+        .laurel-badge::before {
+            left: 10px;
+            transform: rotate(-45deg);
+        }
+
+        .laurel-badge::after {
+            right: 10px;
+            transform: scaleX(-1) rotate(-45deg);
+        }
+
+        .stars {
+            color: #f5b921;
+            /* Yellow stars */
+            font-size: 11px;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .badge-text-small {
+            font-size: 10px;
+            color: #555;
+            letter-spacing: 1px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .badge-text-main {
+            font-size: 14px;
+            font-weight: 700;
+            color: #222;
+            margin: 2px 0;
+            text-transform: uppercase;
+        }
+
+        .badge-year {
+            font-size: 12px;
+            font-weight: 600;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* --- Text Content Area --- */
+        .award-content {
+            flex-grow: 1;
+            padding-top: 15px;
+            /* Aligns text visually with the center of the badge */
+        }
+
+        .content-year {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .divider-line {
+            width: 100%;
+            height: 1px;
+            background-color: #eaeaea;
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        .award-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .award-desc {
+            font-size: 14px;
+            color: #777;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 576px) {
+            .award-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .award-badge-container {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .award-content {
+                padding-top: 0;
+            }
+        }
+
+        /*==== Beauty Innovation ==== */
+
+
+
+
+        /* === FAQ === */
+
+        .faq-bg {
+            width: 100%;
+            background-image: url('../Beauti-shop/assests/images/background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding: 20px;
+            border-radius: 20px;
+            padding-bottom: 100px !important;
+            padding-top: 80px;
+
+        }
+
+
+        .faq-subtitle {
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            color: #6c757d;
+            text-transform: uppercase;
+        }
+
+        .faq-title {
+            font-weight: 700;
+            color: #212529;
+            margin-bottom: 3rem;
+        }
+
+        .text-gold {
+            color: #b48c51
+        }
+
+        .custom-accordion .accordion-item {
+            border: 1px solid #e9ecef;
+            border-radius: 12px !important;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+        }
+
+        .custom-accordion .accordion-button {
+            font-weight: 600;
+            color: #212529;
+            padding: 1.25rem 1.5rem;
+            box-shadow: none !important;
+        }
+
+        .custom-accordion .accordion-button::after {
+            background-image: none;
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #212529;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: none;
+        }
+
+        .custom-accordion .accordion-button:not(.collapsed) {
+            background-color: #204524;
+            color: white;
+        }
+
+        .custom-accordion .accordion-button:not(.collapsed)::after {
+            content: '−';
+            color: white;
+            transform: none;
+        }
+
+        .custom-accordion .accordion-collapse {
+            background-color: #204524;
+            color: #d1d5db;
+        }
+
+        .custom-accordion .accordion-body {
+            padding-top: 0;
+            padding-bottom: 1.5rem;
+        }
+
+        .contact-card {
+            background-color: #204524;
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-card .icon-wrapper {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1.5rem;
+        }
+
+        .chat-bubble-1 {
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .chat-bubble-1::after {
+            content: '...';
+            color: #204524;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -70%);
+            letter-spacing: 2px;
+        }
+
+        .chat-bubble-2 {
+            background-color: #b48c51;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            border-bottom-right-radius: 0;
+        }
+
+        .contact-card h4 {
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card p {
+            font-size: 0.9rem;
+            color: #d1d5db;
+            margin-bottom: 2rem;
+        }
+
+        .contact-card .btn {
+            font-weight: 600;
+            padding: 0.6rem 2rem;
+            color: #212529;
+        }
+
+        /* === End FAQ === */
+
+
+
+
+        /* ===== follow ===== */
+        .follow-bg {
+            width: 100%;
+            background-image: url('../Beauti-shop/assests/images/background-2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            padding: 30px;
+            border-radius: 20px;
+            padding-top: 80px;
+            padding-bottom: 100px !important;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .br {
+            border-radius: 20px;
+        }
+
+        .follow img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .img-1 {
+            height: 420px !important;
+            object-fit: cover;
+
+        }
+
+        /* ===== End follow ===== */
+
+
+        /* Features Section */
+        .features-section {
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--primary-green);
+            margin-right: 15px;
+        }
+
+        .feature-title {
+            font-weight: 700;
+            margin-bottom: 2px;
+            font-size: 1rem;
+        }
+
+        .feature-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        .sticky-top {
+            top: -1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  Header -->
+    <header class="sticky-top">
+        <div class="top-bar py-3 text-white">
+            <div class="container">
+                <div class="row align-items-center text-center">
+
+                    <div class="col-md-4 col-lg-3 text-md-start mb-2 mb-md-0">
+                        <span>Call Us : +123-456-789</span>
+                    </div>
+
+                    <div class="col-md-4 col-lg-6 mb-2 mb-md-0">
+                        <span>Sign up and <strong>GET 20% OFF</strong> for your first order.
+                            <a href="#" class="text-warning text-decoration-underline ms-1">Sign up now</a>
+                        </span>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 text-md-end">
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-pinterest"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg py-3 position-relative">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assests/images/logo.png" alt="logo" width="60px">
+                    <span>Beauty Shop</span>
+                </a>
+                <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fw-bold">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body position-static">
+
+                        <ul class="navbar-nav position-static">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./shop.html">Shop</a>
+                            </li>
+
+                            <li class="nav-item mega-dropdown">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#skinCareMegaMenu" role="button"
+                                    aria-expanded="false" aria-controls="skinCareMegaMenu">
+                                    Skin Care <i class="bi bi-chevron-down fs-6 d-lg-none text-secondary"></i>
+                                </a>
+
+                                <div class="mega-menu-box collapse d-lg-block" id="skinCareMegaMenu">
+                                    <div class="container-fluid px-0">
+                                        <div class="row text-start g-4 align-items-stretch">
+                                            <div class="col-lg-3 col-md-12 col-md-6 mt-lg-0 mt-5 pt-3">
+                                                <h6 class="mega-title">Skin Care</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Cleansers</a></li>
+                                                    <li><a href="#">Serums</a></li>
+                                                    <li><a href="#">Moisturizers</a></li>
+                                                    <li><a href="#">Masks</a></li>
+                                                    <li><a href="#">Face Oils</a></li>
+                                                    <li><a href="#">Lip Care</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12 col-md-6 mt-lg-0 mt-5 pt-3">
+                                                <h6 class="mega-title">By Skin Type</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Oily SKin</a></li>
+                                                    <li><a href="#">Dry Skin</a></li>
+                                                    <li><a href="#">Combinatation SKin </a></li>
+                                                    <li><a href="#">Sensitive Skin</a></li>
+                                                    <li><a href="#">Normal SKin</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12 col-md-6 mt-lg-0 mt-5 pt-3">
+                                                <h6 class="mega-title">By Type Concern</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Acne</a></li>
+                                                    <li><a href="#">Anti-Aging</a></li>
+                                                    <li><a href="#">Pigmentation</a></li>
+                                                    <li><a href="#">Dark Spots</a></li>
+                                                    <li><a href="#">Dryness</a></li>
+                                                    <li><a href="#">Dullness</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12 col-md-6 mt-lg-0 mt-4 pt-3">
+                                                <div class="mega-promo-card-1">
+                                                    <p class="mb-1 text-light mt-5 pt-5">Latest Offers</p>
+                                                    <h5 class="fw-bold mb-3">15% Off Skin Care</h5>
+                                                    <a href="./shop.html" class="btn bg-white ">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item mega-dropdown">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#makeupMegaMenu" role="button"
+                                    aria-expanded="false" aria-controls="makeupMegaMenu">
+                                    Makeup <i class="bi bi-chevron-down fs-6 d-lg-none text-secondary"></i>
+                                </a>
+
+                                <div class="mega-menu-box collapse d-lg-block" id="makeupMegaMenu">
+                                    <div class="container-fluid px-0">
+                                        <div class="row text-start g-4 align-items-stretch">
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-2 pt-3">
+                                                <h6 class="mega-title "> Makeup</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Face</a></li>
+                                                    <li><a href="#">Eyes</a></li>
+                                                    <li><a href="#">Lips</a></li>
+                                                    <li><a href="#">Nails</a></li>
+                                                    <li><a href="#">Makeup Kits</a></li>
+                                                    <li><a href="#">Tools & Brushes</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-3 pt-3">
+                                                <h6 class="mega-title">Shop By Price</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">$15-$35</a></li>
+                                                    <li><a href="#">$35-$55</a></li>
+                                                    <li><a href="#">$55-$75</a></li>
+                                                    <li><a href="#">$75-$95</a></li>
+                                                    <li><a href="#">Above $95</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-3 pt-3">
+                                                <h6 class="mega-title">Special Collection</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">New Arrivals</a></li>
+                                                    <li><a href="#">Best Sellers</a></li>
+                                                    <li><a href="#">Limited Edition</a></li>
+                                                    <li><a href="#">Makeup Gift Sets</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-4 pt-3">
+                                                <div class="mega-promo-card-2">
+                                                    <p class="mb-1 text-light mt-5 pt-5">Latest Offers</p>
+                                                    <h5 class="fw-bold mb-3">15% Off Skin Care</h5>
+                                                    <a href="./shop.html" class="btn bg-white ">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item mega-dropdown">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#hairCareMegaMenu" role="button"
+                                    aria-expanded="false" aria-controls="hairCareMegaMenu">
+                                    Hair Care <i class="bi bi-chevron-down fs-6 d-lg-none text-secondary"></i>
+                                </a>
+
+                                <div class="mega-menu-box collapse d-lg-block" id="hairCareMegaMenu">
+                                    <div class="container-fluid px-0">
+                                        <div class="row text-start g-4 align-items-stretch">
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-2 pt-3">
+                                                <h6 class="mega-title">Hair Care </h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Shampoos</a></li>
+                                                    <li><a href="#">Conditioners</a></li>
+                                                    <li><a href="#">Hair Serums</a></li>
+                                                    <li><a href="#">Hair Tools</a></li>
+                                                    <li><a href="#">Styling Products</a></li>
+                                                    <li><a href="#">Hair Kits </a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-3 pt-3">
+                                                <h6 class="mega-title">Shop by Price</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">$15-$35</a></li>
+                                                    <li><a href="#">$35-$55</a></li>
+                                                    <li><a href="#">$55-$75</a></li>
+                                                    <li><a href="#">$75-$95</a></li>
+                                                    <li><a href="#">Above $95</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-3 pt-3">
+                                                <h6 class="mega-title">By Hair Concern</h6>
+                                                <ul class="mega-list">
+                                                    <li><a href="#">Dryness</a></li>
+                                                    <li><a href="#">Hair Growth</a></li>
+                                                    <li><a href="#">Dandruff</a></li>
+                                                    <li><a href="#">Damage Reapir</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-12  mt-lg-0 mt-4 pt-3">
+                                                <div class="mega-promo-card-3 ">
+                                                    <p class="mb-1 text-light mt-5 pt-3">letest Offers</p>
+                                                    <h5 class="fw-bold mb-3">25% Off on Hair Care</h5>
+                                                    <a href="./shop.html" class="btn bg-white ">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about-us.html">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./blogs.html">Blogs</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav icons ms-auto mt-4 mt-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="#"><i
+                                        class="bi bi-search fs-5 text-dark"></i></a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="./checkout.html"><i
+                                        class="bi bi-heart fs-5 text-dark"></i></a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="./cart.html"><i
+                                        class="bi bi-bag fs-5 text-dark"></i></a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="./my-account.html"><i
+                                        class="bi bi-person fs-5 text-dark"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+
+    <header class="page-header">
+        <div class="container">
+            <h2>About Us</h2>
+            <p class="breadcrumb-text mb-0"><a href="#">Home</a> / About Us</p>
+        </div>
+    </header>
+
+
+
+
+    <!-- About us -->
+
+    <section class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-xl-6 mt-5 pt-5 mtt position-relative">
+                    <div class="d-gird images">
+                        <div class="about-img-1"  data-aos="fade-right">
+                            <img src="assests/images/about-1.jpg" alt="skin-care" width="100%" height="200px">
+                        </div>
+                        <div class="about-img-2"  data-aos="fade-left">
+                            <img src="assests/images/about-4.jpg" alt="skin-care" width="100%" height="200px">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 ">
+                            <div class="about-img-3"  data-aos="fade-right">
+                                <img src="assests/images/about-2.jpg" alt="skin-care" width="100%" height="200px">
+                            </div>
+                        </div>
+                        <div class="col-md-7 ">
+                            <div class="about-img-4"  data-aos="fade-left">
+                                <img src="assests/images/about-3.jpg" alt="skin-care" width="100%" height="200px">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="badge-container" data-aos="zoom-in" data-aos-delay="400">
+
+                        <svg class="spinning-badge" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+                            <g fill="#1E3F27">
+                                <rect x="8" y="8" width="184" height="184" rx="14" transform="rotate(0 100 100)" />
+                                <rect x="8" y="8" width="184" height="184" rx="14" transform="rotate(10 100 100)" />
+                                <rect x="8" y="8" width="184" height="184" rx="14" transform="rotate(20 100 100)" />
+                                <rect x="8" y="8" width="184" height="184" rx="14" transform="rotate(30 100 100)" />
+                                <rect x="8" y="8" width="184" height="184" rx="14" transform="rotate(40 100 100)" />
+                                <rect x="8" y="8" width="184" height="184" rx="14" transform="rotate(50 100 100)" />
+                                <rect x="8" y="8" width="184" height="184" rx="14" transform="rotate(60 100 100)" />
+                                <rect x="8" y="8" width="184" height="184" rx="14" transform="rotate(70 100 100)" />
+                                <rect x="8" y="8" width="184" height="184" rx="14" transform="rotate(80 100 100)" />
+                            </g>
+
+                            <circle cx="100" cy="100" r="76" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+
+                            <path id="text-path" d="M 100, 100 m -58, 0 a 58,58 0 1,1 116,0 a 58,58 0 1,1 -116,0"
+                                fill="none" />
+
+                            <text font-family="'Montserrat', sans-serif" font-size="14.5" font-weight="700"
+                                fill="#FFFFFF" letter-spacing="4">
+                                <textPath href="#text-path" startOffset="50%" text-anchor="middle">
+                                    SHOP NOW &nbsp;&nbsp; SHOP NOW &nbsp;&nbsp; SHOP NOW &nbsp;
+                                </textPath>
+                            </text>
+
+                            <circle cx="100" cy="100" r="28" fill="#C79A49" />
+
+                            <g stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                                fill="none">
+                                <path d="M 88,100 L 112,100" />
+                                <path d="M 103,91 L 112,100 L 103,109" />
+                            </g>
+
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-xl-6  mt-5 p-5 mt-100 about-content">
+                    <p class="  fs28 mt-5 pt-5 fw600" data-aos="fade-up">About Us</p>
+                    <h2 class="mt-3 fs45 mb" data-aos="fade-up">Your Journey to <br><span class="yellow">Effotless Elegance</span></h2>
+                    <p class="mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur aliquid, aut
+                        explicabo doloribus rerum soluta doloribus rerum soluta?</p>
+                    <div class="count" data-aos="fade-left">
+                        <div class="row">
+                            <div class=" col-sm-4 col-md-3 border-end" data-aos="zoom-in" data-aos-delay="400">
+                                <h4 class="yellow fs45">24+</h4>
+                                <p>Categories</p>
+                            </div>
+                            <div class=" col-sm-4 col-md-4 border-end  " data-aos="zoom-in" data-aos-delay="400">
+                                <h4 class="yellow  fs45 ms-3">2500+</h4>
+                                <p class="">Products</p>
+                            </div>
+                            <div class=" col-sm-4 col-md-5" data-aos="zoom-in" data-aos-delay="400">
+                                <h4 class="yellow fs45">99%</h4>
+                                <p>Satisfied Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sine mt-5 fw600 fs20" data-aos="fade-up" >
+                        Ahishek kumar
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--End About us -->
+
+
+
+    <section class="Vision & Mission ">
+        <div class="container py-5">
+
+            <div class="row g-4 mb-4">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="info-card">
+                        <i class="fa-solid fa-rocket watermark-icon"></i>
+                        <div class="d-flex align-items-center position-relative z-2">
+                            <div class="icon-circle">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <h3 class="card-title-custom">Our Vision</h3>
+                        </div>
+                        <p class="card-text-custom">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="info-card">
+                        <i class="fa-solid fa-eye watermark-icon"></i>
+                        <div class="d-flex align-items-center position-relative z-2">
+                            <div class="icon-circle">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <h3 class="card-title-custom">Our Mission</h3>
+                        </div>
+                        <p class="card-text-custom">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-container" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                    alt="Spa Team" class="video-img shadow-sm">
+
+                <div class="play-btn-wrapper" data-bs-toggle="modal" data-bs-target="#videoModal" role="button">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+            </div>
+
+            <div class="container" data-aos="fade-up">
+                <div class="row stats-banner mx-1 mx-md-4">
+                    <div class="col-sm-6 col-md-3 stat-item stat-divider text-start" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="stat-number" >35+</div>
+                        <p class="stat-text">Team Members</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 stat-item stat-divider text-start" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="stat-number" >18+</div>
+                        <p class="stat-text">Years of Experience</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 stat-item stat-divider text-start" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="stat-number">99%</div>
+                        <p class="stat-text">Satisfied Customers</p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 stat-item text-start" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="stat-number" >24+</div>
+                        <p class="stat-text">Categories</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-transparent border-0">
+                    <div class="modal-header border-0 pb-0">
+                        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+                            aria-label="Close"
+                            style="background-color: white; border-radius: 50%; opacity: 1; padding: 10px; margin-bottom: 10px;"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="youtubePlayer" src="" title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 text-center section-header">
+                    <div class="subtitle-wrapper" data-aos="fade-right">
+                        <span class="subtitle"   >Our Team</span>
+                    </div>
+                    <h2 class="main-title" data-aos="fade-left">Meet The Passionate</h2>
+                    <h2 class="main-title highlight-text" data-aos="fade-left">Team Behind Our Success</h2>
+                </div>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="team-card" data-aos="fade-right">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Jenny Alexander" class="team-img">
+                            <div class="social-overlay">
+                                <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="member-name">Jenny Alexander</h3>
+                        <p class="member-role">Founder & CEO</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up">
+                    <div class="team-card">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Bessie Cooper" class="team-img">
+                            <div class="social-overlay">
+                                <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="member-name">Bessie Cooper</h3>
+                        <p class="member-role">Operations Manager</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up">
+                    <div class="team-card">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Jane Cooper" class="team-img">
+                            <div class="social-overlay">
+                                <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="member-name">Jane Cooper</h3>
+                        <p class="member-role">Warehouse Manager</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left">
+                    <div class="team-card">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                alt="Robert Fox" class="team-img">
+                            <div class="social-overlay">
+                                <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a>
+                                <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="member-name">Robert Fox</h3>
+                        <p class="member-role">Inventory Specialist</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Team Section -->
+
+
+
+    <!-- scroll slider -->
+
+    <section>
+        <div class="container-fluid">
+            <div class="marquee-container">
+                <div class="marquee-track">
+
+                    <div class="marquee-group">
+                        <div class="marquee-item">Skin Care</div>
+                        <div class="marquee-item">Makeup</div>
+                        <div class="marquee-item">Hair Care</div>
+                        <div class="marquee-item">Fragrances</div>
+                        <div class="marquee-item">Nail Care</div>
+
+                        <div class="marquee-item">Skin Care</div>
+                        <div class="marquee-item">Makeup</div>
+                        <div class="marquee-item">Hair Care</div>
+                        <div class="marquee-item">Fragrances</div>
+                        <div class="marquee-item">Nail Care</div>
+
+                        <div class="marquee-item">Skin Care</div>
+                        <div class="marquee-item">Makeup</div>
+                        <div class="marquee-item">Hair Care</div>
+                        <div class="marquee-item">Fragrances</div>
+                        <div class="marquee-item">Nail Care</div>
+                    </div>
+
+                    <div class="marquee-group">
+                        <div class="marquee-item">Skin Care</div>
+                        <div class="marquee-item">Makeup</div>
+                        <div class="marquee-item">Hair Care</div>
+                        <div class="marquee-item">Fragrances</div>
+                        <div class="marquee-item">Nail Care</div>
+
+                        <div class="marquee-item">Skin Care</div>
+                        <div class="marquee-item">Makeup</div>
+                        <div class="marquee-item">Hair Care</div>
+                        <div class="marquee-item">Fragrances</div>
+                        <div class="marquee-item">Nail Care</div>
+
+                        <div class="marquee-item">Skin Care</div>
+                        <div class="marquee-item">Makeup</div>
+                        <div class="marquee-item">Hair Care</div>
+                        <div class="marquee-item">Fragrances</div>
+                        <div class="marquee-item">Nail Care</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!--  End Scroll Slider -->
+
+
+
+    <!-- Testimonials   -->
+
+    <section class="testimonial-section">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <p class="sub-heading">Testimonials</p>
+                <h2 class="main-heading">Testimonials from<br><span>Our Loyal Customers</span></h2>
+            </div>
+
+            <div class="avatar-carousel-wrapper">
+                <div class="avatar-track" id="avatar-track">
+                </div>
+            </div>
+
+            <div class="slider-content-wrapper">
+
+                <button class="nav-btn prev-btn d-none d-md-flex" id="prev-btn" aria-label="Previous"><i
+                        class="fas fa-arrow-left"></i></button>
+                <div class="bg-quote"><i class="fas fa-quote-left"></i></div>
+
+                <div class="reviews-container" id="reviews-container">
+                </div>
+
+                <button class="nav-btn next-btn d-none d-md-flex" id="next-btn" aria-label="Next"><i
+                        class="fas fa-arrow-right"></i></button>
+
+                <div class="text-center d-md-none">
+                    <button class="nav-btn prev-btn" id="prev-btn-mobile"><i class="fas fa-arrow-left"></i></button>
+                    <button class="nav-btn next-btn" id="next-btn-mobile"><i class="fas fa-arrow-right"></i></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End  Testimonials   -->
+
+
+
+
+    <!-- Scroll slider -->
+    <section class="slider ">
+        <div class="container-fluid">
+            <div class="marquee-container">
+                <div class="marquee-track">
+
+                    <div class="marquee-group">
+                        <div class="marquee-item">Skin Care</div>
+                        <div class="marquee-item">Makeup</div>
+                        <div class="marquee-item">Hair Care</div>
+                        <div class="marquee-item">Fragrances</div>
+                        <div class="marquee-item">Nail Care</div>
+
+                        <div class="marquee-item">Skin Care</div>
+                        <div class="marquee-item">Makeup</div>
+                        <div class="marquee-item">Hair Care</div>
+                        <div class="marquee-item">Fragrances</div>
+                        <div class="marquee-item">Nail Care</div>
+
+                        <div class="marquee-item">Skin Care</div>
+                        <div class="marquee-item">Makeup</div>
+                        <div class="marquee-item">Hair Care</div>
+                        <div class="marquee-item">Fragrances</div>
+                        <div class="marquee-item">Nail Care</div>
+                    </div>
+
+                    <div class="marquee-group">
+                        <div class="marquee-item">Skin Care</div>
+                        <div class="marquee-item">Makeup</div>
+                        <div class="marquee-item">Hair Care</div>
+                        <div class="marquee-item">Fragrances</div>
+                        <div class="marquee-item">Nail Care</div>
+
+                        <div class="marquee-item">Skin Care</div>
+                        <div class="marquee-item">Makeup</div>
+                        <div class="marquee-item">Hair Care</div>
+                        <div class="marquee-item">Fragrances</div>
+                        <div class="marquee-item">Nail Care</div>
+
+                        <div class="marquee-item">Skin Care</div>
+                        <div class="marquee-item">Makeup</div>
+                        <div class="marquee-item">Hair Care</div>
+                        <div class="marquee-item">Fragrances</div>
+                        <div class="marquee-item">Nail Care</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End scroll slider -->
+
+
+    <!-- Beauty Innovation -->
+
+    <section class="awards-section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 text-center section-header">
+                    <div class="subtitle-wrapper" data-aos="fade-left">
+                        <span class="subtitle">Our Award</span>
+                    </div>
+                    <h2 class="main-title" data-aos="fade-right">Recognized for</h2>
+                    <h2 class="main-title highlight-text " data-aos="fade-right">Beauty Innovation</h2>
+                </div>
+            </div>
+
+            <div class="row g-5">
+
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="award-item">
+                        <div class="award-badge-container">
+                            <div class="laurel-badge">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="badge-text-small">Customer</p>
+                                <p class="badge-text-main">Trust</p>
+                                <p class="badge-text-small">Award</p>
+                            </div>
+                            <div class="badge-year">2024</div>
+                        </div>
+                        <div class="award-content">
+                            <div class="content-year">2024</div>
+                            <hr class="divider-line">
+                            <h3 class="award-title">Customer Trust Award</h3>
+                            <p class="award-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="award-item">
+                        <div class="award-badge-container">
+                            <div class="laurel-badge">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="badge-text-small">Luxury</p>
+                                <p class="badge-text-main">Beauty</p>
+                                <p class="badge-text-small">Excellence</p>
+                            </div>
+                            <div class="badge-year">2023</div>
+                        </div>
+                        <div class="award-content">
+                            <div class="content-year">2023</div>
+                            <hr class="divider-line">
+                            <h3 class="award-title">Luxury Beauty Excellence</h3>
+                            <p class="award-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="award-item">
+                        <div class="award-badge-container">
+                            <div class="laurel-badge">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="badge-text-small">Premier</p>
+                                <p class="badge-text-main">Cosmetics</p>
+                                <p class="badge-text-small">Provider</p>
+                            </div>
+                            <div class="badge-year">2022</div>
+                        </div>
+                        <div class="award-content">
+                            <div class="content-year">2022</div>
+                            <hr class="divider-line">
+                            <h3 class="award-title">Premier Cosmetics Provider</h3>
+                            <p class="award-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="award-item">
+                        <div class="award-badge-container">
+                            <div class="laurel-badge">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="badge-text-small">Trusted</p>
+                                <p class="badge-text-main">Beauty</p>
+                                <p class="badge-text-small">Brand</p>
+                            </div>
+                            <div class="badge-year">2021</div>
+                        </div>
+                        <div class="award-content">
+                            <div class="content-year">2021</div>
+                            <hr class="divider-line">
+                            <h3 class="award-title">Trusted Beauty Brand</h3>
+                            <p class="award-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Beauty Innovation -->
+
+
+
+    <!-- FAQ Section  -->
+
+    <section class="faq-bg">
+
+        <div class="container py-5">
+
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col-12">
+                    <span class="faq-subtitle d-block mb-2 fs20" data-aos="fade-right">FAQs</span>
+                    <h2 class="faq-title fs45 mt-3" data-aos="fade-left">Question? <span class="text-gold">Look here.</span></h2>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <div class="accordion custom-accordion" id="faqAccordion">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    What types of products do you offer?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo">
+                                    Do you offer any discounts or promotions?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse show"
+                                data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua eiusmod tempor incididunt ut labore...
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree">
+                                    How can I provide feedback about my experience?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive">
+                                    Do you offer customer support?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix">
+                                    How do I track my order?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="contact-card">
+                        <div class="icon-wrapper">
+                            <div class="chat-bubble-2"></div>
+                            <div class="chat-bubble-1"></div>
+                        </div>
+
+                        <h4>You have different questions?</h4>
+                        <p>Our team will answer all your questions. We ensure a quick response.</p>
+                        <a href="#" class="btn btn-light rounded-pill bg-white">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End  FAQ Section  -->
+
+
+
+
+    <!-- Follow -->
+    <section class="follow-bg">
+        <div class="container">
+            <div class="row ">
+                <p class="text-center fs20 mt-5 pt-5" data-aos="fade-right">Follow Us</p>
+                <h2 class="fw600 fs45 text-center mt-3" data-aos="fade-left">Follow On <span class="yellow">Instagram</span></h2>
+
+                <div class="col-md-12 col-lg-4 mt-5" data-aos="fade-right">
+                    <div class="follow">
+                        <div class="row ">
+                            <div class="  col-sm-6  col-md-6 follow-img ">
+                                <img src="assests/images/image-1.jpg" alt="skin care" width="100%" class="br">
+                            </div>
+                            <div class=" col-sm-6 col-md-6 mt-20 ht follow-img">
+                                <img src="assests/images/image-2.jpg" alt="skin care" width="100%" class="br">
+                            </div>
+                            <div class=" col-sm-6 col-md-6  mt-3  mt-20 follow-img">
+                                <img src="assests/images/image-3.jpg" alt="skin care" width="100%" class="br">
+                            </div>
+                            <div class=" col-sm-6 col-md-6 mt-3 mt-20 follow-img">
+                                <img src="assests/images/skin-care-3.jpg" alt="skin care" width="100%" class="br">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 mt-5 mt-20 follow-img" data-aos="fade-up">
+                    <img src="assests/images/image-4.jpg" alt="body care" width="100%" class="br img-1" height="400px">
+                </div>
+
+                <div class="col-md-12 col-lg-4 mt-5 pb-5 mtt-1 " data-aos="fade-left">
+                    <div class="follow">
+                        <div class="row ">
+                            <div class=" col-sm-6 col-md-6 mt-20 follow-img ">
+                                <img src="assests/images/image-5.jpg" alt="skin care" width="100%" class="br">
+                            </div>
+                            <div class=" col-sm-6 col-md-6  mt-20 follow-img">
+                                <img src="assests/images/image-6.jpg" alt="skin care" width="100%" class="br">
+                            </div>
+                            <div class=" col-sm-6 col-md-6  mt-3  mt-20 follow-img">
+                                <img src="assests/images/image-7.jpg" alt="skin care" width="100%" class="br">
+                            </div>
+                            <div class=" col-sm-6 col-md-6 mt-3  mt-20 follow-img">
+                                <img src="assests/images/image-8.jpg" alt="skin care" width="100%" class="br">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- End Follow -->
+
+
+
+
+                <div class="features-section">
+                    <div class="row text-center text-md-start">
+                        <div class="col-md-4 mb-3 mb-md-0 d-flex flex-column flex-md-row align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="bi bi-box-seam feature-icon"></i>
+                            <div>
+                                <h6 class="feature-title">Free Shipping</h6>
+                                <p class="feature-desc">Free shipping for order above $50</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0 d-flex flex-column flex-md-row align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="bi bi-credit-card feature-icon"></i>
+                            <div>
+                                <h6 class="feature-title">Flexible Payment</h6>
+                                <p class="feature-desc">Multiple secure payment options</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column flex-md-row align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="bi bi-headset feature-icon"></i>
+                            <div>
+                                <h6 class="feature-title">24x7 Support</h6>
+                                <p class="feature-desc">We support online all days.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+
+    <!-- NewsLetter -->
+    <section class="newslettes">
+        <div class="container">
+            <div class="row">
+                <div class="news-content text-center">
+                    <p class="fs20 " data-aos="fade-right"> Our Newsletter</p>
+                    <h2 class="fs45 mt-3 mb" data-aos="fade-left"> Subscribe to Our Newsletter to <br> Get <span class="yellow"> Updates on
+                            Our
+                            Latest Offers</span></h2>
+                    <p class="mt-3 fs18 gray mtt-2 " data-aos="fade-up">Get 25% off on your first order just by subscribing to our
+                        newsletter</p>
+                    <div class="subcribe-btn mt-5">
+                        <input type="text" placeholder="Enter Email Address" class="input" data-aos="fade-right">
+                        <a href="#" class="btn  mtt-2 " data-aos="fade-left">Subscribe</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- End NewsLetter -->
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-lg-5 col-xl-3  mt-4 tc" data-aos="fade-right">
+                    <div class="footer-logo">
+                        <img src="./assests/images/logo.png" alt="logo" width="60px"><span class="fw600 fs25"> Beauty
+                            Shop</span>
+                    </div>
+                    <p class="mt-4  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos cumque cum,
+                        explicabo amet.</p>
+
+                    <div class=" footer-icons ">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube dmt"></i></a>
+                    </div>
+                </div>
+
+                <div class=" col-6  col-md-3 col-lg-3 col-xl-2 mt-4 mtt-3 " data-aos="fade-up">
+                    <h4>Company</h4>
+                    <p class="mt-4"> <a href="./about-us.html">About Us </a> </p>
+                    <p> <a href="./blogs.html">Blogs </a></p>
+                    <p> <a href="./contact.html">Content Us </a></p>
+                    <p> <a href="./checkout.html">Career </a></p>
+                </div>
+
+                <div class=" col-sm-6 col-md-4 col-lg-4  col-xl-3 mt-4  mtt-3" data-aos="fade-up">
+                    <h4>Customer Services</h4>
+                    <p class="mt-4 "> <a href="./my-account.html">My Account </a></p>
+                    <p> <a href="./track-order.html">Track Your Order </a></p>
+                    <p> <a href="#">Return </a></p>
+                    <p> <a href="./faq.html">FAQ </a></p>
+                </div>
+
+                <div class=" col-sm-6 col-md-6 col-lg-6  col-xl-2 mt-4" data-aos="fade-up">
+                    <h4>Our Information</h4>
+                    <p class="mt-4 "> <a href="#">Privacy </a></p>
+                    <p> <a href="#">User Terms & Condition </a></p>
+                    <p> <a href="#">Return Policy </a></p>
+                </div>
+
+                <div class=" col-sm-6 col-md-6 col-lg-6  col-xl-2 mt-4" data-aos="fade-left">
+                    <h4>Content info</h4>
+                    <p class="mt-4 ">+0123-456-789 </p>
+                    <p> example@gmail.com </p>
+                    <p> 8502 Preston Rd. Inglewod, maine 98768 </p>
+                </div>
+
+                <div class="border-bottom mt-5"></div>
+
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <p class="fw500">Copyright @ 2025 <span class="yellow"> Beauty Shop Website.</span>All Right
+                        Reserved.</p>
+
+                    <div class="selcted-language">
+                        <select>
+                            <option value="English">English</option>
+                            <!-- <option value="English">Hindi</option>
+                    <option value="English">Tamil</option>
+                    <option value="English">France</option> -->
+                        </select>
+                        |
+                        <select>
+                            <option value="English">USD</option>
+                            <!-- <option value="English">Hindi</option>
+                    <option value="English">Tamil</option>
+                    <option value="English">France</option> -->
+                        </select>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+<script>
+
+
+    // === Tesimonals ==== //
+    const testimonials = [
+        { img: 'https://i.pravatar.cc/150?img=44', title: 'Transformed My Daily Routine!', text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.', rating: '5.0', name: 'Sarah Jenkins', role: 'Verified Buyer' },
+        { img: 'https://i.pravatar.cc/150?img=32', title: 'Incredible Quality and Service', text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Highly recommended to everyone. I have never seen such amazing results before.', rating: '4.9', name: 'Emily Chen', role: 'Skincare Enthusiast' },
+        { img: 'https://i.pravatar.cc/150?img=47', title: 'The Best Thing I’ve Used for My Skin!', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.', rating: '5.0', name: 'Bessie Cooper', role: 'Happy Customer' },
+        { img: 'https://i.pravatar.cc/150?img=12', title: 'Results Within the First Week', text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.', rating: '5.0', name: 'Jessica Alba', role: 'Loyal Customer' },
+        { img: 'https://i.pravatar.cc/150?img=20', title: 'I Will Never Go Back!', text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem. Truly a lifesaver product.', rating: '4.8', name: 'Amanda Brooks', role: 'New Customer' }
+    ];
+
+    let currentIndex = 2; // Center default
+    let autoSlideInterval;
+
+    const avatarTrack = document.getElementById('avatar-track');
+    const reviewsContainer = document.getElementById('reviews-container');
+
+    // Exact dimensions for math
+    const itemWidth = 80; // 60px avatar + 20px gap
+
+    function initSlider() {
+        testimonials.forEach((test, index) => {
+            // 1. Build Avatars
+            const avatarDiv = document.createElement('div');
+            avatarDiv.className = `avatar-item ${index === currentIndex ? 'active' : ''}`;
+            avatarDiv.innerHTML = `<img src="${test.img}" alt="${test.name}">`;
+
+            avatarDiv.addEventListener('click', () => goToSlide(index));
+            avatarTrack.appendChild(avatarDiv);
+
+            // 2. Build Slides (All slides exist in DOM, stacked via Grid)
+            const slideDiv = document.createElement('div');
+            slideDiv.className = `review-slide ${index === currentIndex ? 'active' : ''}`;
+            slideDiv.innerHTML = `
+                    <h3 class="review-title">${test.title}</h3>
+                    <p class="review-text">${test.text}</p>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>${test.rating}</span>
+                    </div>
+                    <h5 class="review-author">${test.name}</h5>
+                    <p class="review-role">${test.role}</p>
+                `;
+            reviewsContainer.appendChild(slideDiv);
+        });
+
+        updateVisuals();
+    }
+
+    function goToSlide(index) {
+        if (currentIndex === index) return;
+        currentIndex = index;
+        updateVisuals();
+        resetTimer();
+    }
+
+    function updateVisuals() {
+        // Update Active Classes for Avatars
+        const avatars = document.querySelectorAll('.avatar-item');
+        avatars.forEach((av, idx) => av.classList.toggle('active', idx === currentIndex));
+
+        // Update Active Classes for Slides (Fades them in/out flawlessly)
+        const slides = document.querySelectorAll('.review-slide');
+        slides.forEach((slide, idx) => slide.classList.toggle('active', idx === currentIndex));
+
+        // Move Track
+        const activeCenterPosition = (currentIndex * itemWidth) + (itemWidth / 2);
+        avatarTrack.style.transform = `translateX(-${activeCenterPosition}px)`;
+    }
+
+    function nextSlide() { goToSlide((currentIndex + 1) % testimonials.length); }
+    function prevSlide() { goToSlide((currentIndex - 1 + testimonials.length) % testimonials.length); }
+
+    function resetTimer() {
+        clearInterval(autoSlideInterval);
+        autoSlideInterval = setInterval(nextSlide, 3000);
+    }
+
+    // Button Listeners
+    document.getElementById('next-btn').addEventListener('click', nextSlide);
+    document.getElementById('prev-btn').addEventListener('click', prevSlide);
+    document.getElementById('next-btn-mobile').addEventListener('click', nextSlide);
+    document.getElementById('prev-btn-mobile').addEventListener('click', prevSlide);
+
+    // Run
+    initSlider();
+    resetTimer();
+
+
+
+
+    
+  AOS.init({
+    duration: 1000, /* Animation ki speed (1000ms = 1 second) - Smooth feel ke liye */
+    once: false, /* Har baar scroll karne par animation hogi, ya sirf ek baar (true/false) */
+    offset: 100, /* Thoda scroll karne ke baad animation trigger ho */
+  });
+</script>
+
+</html>
